@@ -1,13 +1,13 @@
 {
   "aor": [
-    0.00029645333333333334,
-    0.00048488,
-    0.0005757866666666666
+    0.000296,
+    0.00048844,
+    0.0005779733333333333
   ],
   "aqi": [
-    0.009306719693333333,
-    0.01523223024,
-    0.028301995466666664
+    0.00932662588,
+    0.015223972066666666,
+    0.028301282533333336
   ],
   "bids_meta": {
     "AcquisitionDuration": 1230.47,
@@ -24,7 +24,7 @@
     "ConversionSoftwareVersion": "v1.0.20220720",
     "DerivedVendorReportedEchoSpacing": 0.000690005,
     "DeviceSerialNumber": "202009",
-    "DwellTime": 2.4e-06,
+    "DwellTime": 2.4e-6,
     "EchoNumber": 3,
     "EchoTime": 0.06444,
     "EchoTrainLength": 35,
@@ -186,25 +186,25 @@
     "task": "rest"
   },
   "dummy_trs": 0,
-  "dvars_nstd": 101.05355100534041,
-  "dvars_std": 1.0255308632176248,
-  "dvars_vstd": 1.0008249135914549,
-  "efc": 0.6017,
-  "fber": 33.8035,
+  "dvars_nstd": 101.12177375427241,
+  "dvars_std": 1.0262542819759684,
+  "dvars_vstd": 1.0008613747530029,
+  "efc": 0.6077,
+  "fber": 33.5742,
   "fd_mean": 0.10334088497693003,
   "fd_num": 13,
   "fd_perc": 1.7333333333333334,
-  "fwhm_avg": 2.386813494848857,
-  "fwhm_x": 2.1936375371875454,
-  "fwhm_y": 2.6667393608479246,
-  "fwhm_z": 2.3000635865111008,
+  "fwhm_avg": 2.3894378336979964,
+  "fwhm_x": 2.1969725083056315,
+  "fwhm_y": 2.668518315427968,
+  "fwhm_z": 2.30282267736039,
   "gcor": [
-    0.0709735,
-    0.0473534,
-    0.0286576
+    0.0709175,
+    0.0472377,
+    0.0285625
   ],
-  "gsr_x": -0.00027020921697840095,
-  "gsr_y": 0.02224680781364441,
+  "gsr_x": -0.004199214745312929,
+  "gsr_y": 0.016582634299993515,
   "provenance": {
     "md5sum": "560ea80cc22ffde5643321d3d317d410",
     "settings": {
@@ -212,32 +212,32 @@
       "testing": false
     },
     "software": "mriqc",
-    "version": "24.0.1"
+    "version": "24.1.0.dev15+g9586c867.d20240825"
   },
   "size_t": 750,
   "size_x": 96,
   "size_y": 96,
   "size_z": 60,
-  "snr": 1.5275341377910039,
+  "snr": 1.524955430432398,
   "spacing_tr": 1.600000023841858,
   "spacing_x": 2.197920083999634,
   "spacing_y": 2.197920083999634,
   "spacing_z": 2.200000047683716,
-  "summary_bg_k": 64.2848,
-  "summary_bg_mad": 27.359,
-  "summary_bg_mean": 341.7443,
-  "summary_bg_median": 348.0,
-  "summary_bg_n": 416405.0,
+  "summary_bg_k": 106.5259,
+  "summary_bg_mad": 26.843,
+  "summary_bg_mean": 351.1767,
+  "summary_bg_median": 349.0,
+  "summary_bg_n": 416143.0,
   "summary_bg_p05": 0.0,
-  "summary_bg_p95": 492.0,
-  "summary_bg_stdv": 152.3166,
-  "summary_fg_k": 4.4996,
-  "summary_fg_mad": 1063.4706,
-  "summary_fg_mean": 2175.2445,
-  "summary_fg_median": 2025.0,
-  "summary_fg_n": 136555.0,
-  "summary_fg_p05": 427.0,
+  "summary_bg_p95": 494.0,
+  "summary_bg_stdv": 143.0613,
+  "summary_fg_k": 4.4842,
+  "summary_fg_mad": 1065.9591,
+  "summary_fg_mean": 2172.8901,
+  "summary_fg_median": 2023.0,
+  "summary_fg_n": 136817.0,
+  "summary_fg_p05": 425.0,
   "summary_fg_p95": 4538.0,
-  "summary_fg_stdv": 1325.6611,
-  "tsnr": 11.713231426663697
+  "summary_fg_stdv": 1326.5913,
+  "tsnr": 11.701657087309286
 }

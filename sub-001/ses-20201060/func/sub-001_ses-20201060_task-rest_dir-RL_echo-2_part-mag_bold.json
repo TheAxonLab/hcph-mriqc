@@ -1,13 +1,13 @@
 {
   "aor": [
-    0.00047049333333333337,
-    0.0006086133333333333,
-    0.0007584133333333334
+    0.00046853333333333325,
+    0.0006093199999999999,
+    0.00076108
   ],
   "aqi": [
-    0.011984101373333333,
-    0.0214149212,
-    0.03627887493333334
+    0.012065784533333334,
+    0.02157557733333333,
+    0.03635251426666666
   ],
   "bids_meta": {
     "AcquisitionDuration": 1230.47,
@@ -24,7 +24,7 @@
     "ConversionSoftwareVersion": "v1.0.20220720",
     "DerivedVendorReportedEchoSpacing": 0.000690005,
     "DeviceSerialNumber": "67014",
-    "DwellTime": 2.4e-06,
+    "DwellTime": 2.4e-6,
     "EchoNumber": 2,
     "EchoTime": 0.03882,
     "EchoTrainLength": 35,
@@ -187,25 +187,25 @@
     "task": "rest"
   },
   "dummy_trs": 0,
-  "dvars_nstd": 67.12376895794392,
-  "dvars_std": 1.003733766608812,
-  "dvars_vstd": 0.991761066395194,
-  "efc": 0.5628,
-  "fber": 148.4238,
+  "dvars_nstd": 67.11084563957277,
+  "dvars_std": 1.0038786053805078,
+  "dvars_vstd": 0.991740787102803,
+  "efc": 0.5661,
+  "fber": 146.1566,
   "fd_mean": 0.11746553444635471,
   "fd_num": 54,
   "fd_perc": 7.2,
-  "fwhm_avg": 2.6963274606170535,
-  "fwhm_x": 2.780542406655136,
-  "fwhm_y": 2.653026396386927,
-  "fwhm_z": 2.6554135788090973,
+  "fwhm_avg": 2.699872796906494,
+  "fwhm_x": 2.786220502092205,
+  "fwhm_y": 2.656588855302972,
+  "fwhm_z": 2.656809033324306,
   "gcor": [
-    0.00495306,
-    0.00838224,
-    0.00749419
+    0.00494289,
+    0.00836542,
+    0.007473
   ],
-  "gsr_x": 0.013494064100086689,
-  "gsr_y": 0.015818148851394653,
+  "gsr_x": 0.010248757898807526,
+  "gsr_y": 0.012794744223356247,
   "provenance": {
     "md5sum": "abffd9a0cc60f5d2cacbc944877bb96e",
     "settings": {
@@ -213,32 +213,32 @@
       "testing": false
     },
     "software": "mriqc",
-    "version": "24.0.1"
+    "version": "24.1.0.dev15+g9586c867.d20240825"
   },
   "size_t": 750,
   "size_x": 96,
   "size_y": 96,
   "size_z": 60,
-  "snr": 2.0628883113425887,
+  "snr": 2.059921016335448,
   "spacing_tr": 1.600000023841858,
   "spacing_x": 2.197920083999634,
   "spacing_y": 2.197920083999634,
   "spacing_z": 2.200000047683716,
-  "summary_bg_k": 79.0778,
-  "summary_bg_mad": 6.5926,
-  "summary_bg_mean": 32.335,
+  "summary_bg_k": 78.8367,
+  "summary_bg_mad": 6.4602,
+  "summary_bg_mean": 33.0236,
   "summary_bg_median": 24.0,
-  "summary_bg_n": 413590.0,
+  "summary_bg_n": 413398.0,
   "summary_bg_p05": 0.0,
-  "summary_bg_p95": 86.0,
-  "summary_bg_stdv": 38.1395,
-  "summary_fg_k": 0.8773,
-  "summary_fg_mad": 122.0864,
-  "summary_fg_mean": 299.6924,
+  "summary_bg_p95": 87.0,
+  "summary_bg_stdv": 38.2572,
+  "summary_fg_k": 0.8675,
+  "summary_fg_mad": 122.29,
+  "summary_fg_mean": 299.3447,
   "summary_fg_median": 292.0,
-  "summary_fg_n": 139370.0,
-  "summary_fg_p05": 54.0,
+  "summary_fg_n": 139562.0,
+  "summary_fg_p05": 53.0,
   "summary_fg_p95": 541.0,
-  "summary_fg_stdv": 141.5486,
-  "tsnr": 17.262514270376414
+  "summary_fg_stdv": 141.7525,
+  "tsnr": 17.246966087259352
 }

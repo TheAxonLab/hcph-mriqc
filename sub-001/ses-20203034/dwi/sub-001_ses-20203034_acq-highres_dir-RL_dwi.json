@@ -35,7 +35,7 @@
     "DerivedVendorReportedEchoSpacing": 0.000959971,
     "DeviceSerialNumber": "176240",
     "DiffusionScheme": "Monopolar",
-    "DwellTime": 2.1e-06,
+    "DwellTime": 2.1e-6,
     "EchoTime": 0.121,
     "EchoTrainLength": 64,
     "EffectiveEchoSpacing": 0.000479986,
@@ -240,7 +240,7 @@
       "testing": false
     },
     "software": "mriqc",
-    "version": "24.0.1"
+    "version": "24.1.0.dev15+g9586c867.d20240825"
   },
   "sigma_cc": 56.3389,
   "sigma_pca": 14.7236,

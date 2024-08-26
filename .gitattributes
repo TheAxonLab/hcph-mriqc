@@ -5,6 +5,8 @@
 *.html annex.largefiles=nothing
 *.json annex.largefiles=nothing
 *.tsv annex.largefiles=nothing
+*.toml annex.largefiles=nothing
+*.log annex.largefiles=nothing
 .bids-validator-config.json annex.largefiles=nothing
 .bidsignore annex.largefiles=nothing
 CHANGES annex.largefiles=nothing
