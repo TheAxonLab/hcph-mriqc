@@ -1,0 +1,1083 @@
+------------------------------------------------------------------
+  Running MRIQC version 24.1.0.dev15+g9586c867.d20240825
+  ----------------------------------------------------------------
+
+  NOTICE
+  Copyright © The NiPreps Developers.
+  
+  This product includes software developed by
+  the NiPreps Community (https://nipreps.org/).
+  
+  Portions of this software were developed at the Department of
+  Psychology at Stanford University, Stanford, CA, US.
+  
+  This software contains code ultimately derived from the
+  PCP Quality Assessment Protocol (QAP;
+  http://preprocessed-connectomes-project.org/quality-assessment-protocol)
+  by C. Craddock, S. Giavasis, D. Clark, Z. Shezhad, and J. Pellman.
+  
+  This software is also distributed as a Docker container image.
+  The bootstrapping file for the image ("Dockerfile") is licensed
+  under the MIT License.
+
+  ----------------------------------------------------------------
+
+  * BIDS dataset path: /data/datasets/hcph.
+  * Output folder: /data/derivatives/hcph/datalad/hcph-mriqc.
+  * Analysis levels: ['participant'].
+  * BIDS filters-file: /home/oesteban/tmp/hcph-mriqc/filter-onesession.json.
+------------------------------------------------------------------
+
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | DataLad dataset identified, attempting to `datalad get` unavailable files.
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | Extracting metadata and entities for 1 input runs of modality 't1w'...
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | File size ('t1w'): 0.01|0.01 GB [maximum|average].
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | Extracting metadata and entities for 2 input runs of modality 't2w'...
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | File size ('t2w'): 0.02|0.02 GB [maximum|average].
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | Extracting metadata and entities for 1 input runs of modality 'bold'...
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | File size ('bold'): 1.15|1.15 GB [maximum|average].
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | Extracting metadata and entities for 1 input runs of modality 'dwi'...
+2024-08-27 11:34:27 | IMPORTANT | mriqc            | File size ('dwi'): 0.33|0.33 GB [maximum|average].
+2024-08-27 11:34:27 | INFO     | mriqc            | MRIQC config file: /home/oesteban/tmp/hcph-mriqc/work/config-20240827-113426_6db9deb2-a5d9-4326-a7ab-d31e58f8aba3.toml.
+2024-08-27 11:34:32 | IMPORTANT | mriqc            | Building MRIQC's workflows...
+2024-08-27 11:34:32 | INFO     | nipype.workflow  | Building functional MRIQC workflow for 1 BOLD runs..
+2024-08-27 11:34:32 | INFO     | nipype.workflow  | Building diffusion MRIQC workflow for 1 NIfTI files..
+2024-08-27 11:34:32 | INFO     | nipype.workflow  | Building anatomical MRIQC workflow for 3 NIfTI files..
+2024-08-27 11:34:36 | IMPORTANT | mriqc            | Workflow building finished (exit code 0).
+2024-08-27 11:34:41 | INFO     | nipype.workflow  | Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+2024-08-27 11:34:41 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.load_bmat" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/load_bmat".
+2024-08-27 11:34:41 | INFO     | nipype.workflow  | [Node] Executing "load_bmat" <mriqc.interfaces.diffusion.ReadDWIMetadata>
+2024-08-27 11:34:42 | INFO     | nipype.workflow  | [Node] Finished "load_bmat", elapsed time 0.756962s.
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/ds_report_background".
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Finished "ds_report_background", elapsed time 0.016885s.
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/ds_report_background".
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Finished "ds_report_background", elapsed time 0.003863s.
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/ds_report_background".
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:34:45 | INFO     | nipype.workflow  | [Node] Finished "ds_report_background", elapsed time 0.003778s.
+2024-08-27 11:34:49 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.pre_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/pre_n4".
+2024-08-27 11:34:49 | INFO     | nipype.workflow  | [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:34:53 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.fMRI_HMC.estimate_hm" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/estimate_hm".
+2024-08-27 11:34:53 | INFO     | nipype.workflow  | [Node] Executing "estimate_hm" <nipype.interfaces.afni.preprocess.Volreg>
+2024-08-27 11:35:23 | INFO     | nipype.workflow  | [Node] Finished "pre_n4", elapsed time 33.952249s.
+2024-08-27 11:35:25 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_ref" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/dwi_ref".
+2024-08-27 11:35:25 | INFO     | nipype.workflow  | [Node] Executing "dwi_ref" <niworkflows.interfaces.images.RobustAverage>
+2024-08-27 11:35:29 | INFO     | nipype.workflow  | [Node] Finished "dwi_ref", elapsed time 4.166166s.
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.get_lowb" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_lowb".
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.synthstrip_wf.pre_clip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/pre_clip".
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.SpatialNormalization.SharpenEPI" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/SharpenEPI".
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Executing "get_lowb" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Executing "SharpenEPI" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:35:31 | INFO     | nipype.workflow  | [Node] Executing "pre_clip" <niworkflows.interfaces.nibabel.IntensityClip>
+2024-08-27 11:35:33 | INFO     | nipype.workflow  | [Node] Finished "pre_clip", elapsed time 2.105716s.
+2024-08-27 11:35:35 | INFO     | nipype.workflow  | [Node] Finished "get_lowb", elapsed time 3.514582s.
+2024-08-27 11:35:35 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/synthstrip".
+2024-08-27 11:35:35 | INFO     | nipype.workflow  | [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>
+2024-08-27 11:35:48 | INFO     | nipype.workflow  | [Node] Finished "SharpenEPI", elapsed time 16.927252s.
+2024-08-27 11:35:53 | INFO     | nipype.workflow  | [Node] Finished "synthstrip", elapsed time 18.240468s.
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/synthstrip".
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/smoothness".
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/PlotMosaicZoomed".
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 11:35:55 | INFO     | nipype.workflow  | [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 11:36:00 | INFO     | nipype.workflow  | [Node] Finished "PlotMosaicZoomed", elapsed time 5.373195s.
+2024-08-27 11:36:01 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/ds_report_zoomed".
+2024-08-27 11:36:01 | INFO     | nipype.workflow  | [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:36:01 | INFO     | nipype.workflow  | [Node] Finished "ds_report_zoomed", elapsed time 0.004109s.
+2024-08-27 11:36:02 | INFO     | nipype.workflow  | [Node] Finished "smoothness", elapsed time 7.119805s.
+2024-08-27 11:36:25 | INFO     | nipype.workflow  | [Node] Finished "synthstrip", elapsed time 30.253105s.
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.synthstrip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/synthstrip".
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/smoothness".
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/PlotMosaicZoomed".
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 11:36:27 | INFO     | nipype.workflow  | [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 11:36:33 | INFO     | nipype.workflow  | [Node] Finished "PlotMosaicZoomed", elapsed time 6.000893s.
+2024-08-27 11:36:35 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/ds_report_zoomed".
+2024-08-27 11:36:35 | INFO     | nipype.workflow  | [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:36:35 | INFO     | nipype.workflow  | [Node] Finished "ds_report_zoomed", elapsed time 0.004005s.
+2024-08-27 11:36:35 | INFO     | nipype.workflow  | [Node] Finished "smoothness", elapsed time 8.338536s.
+2024-08-27 11:36:58 | INFO     | nipype.workflow  | [Node] Finished "synthstrip", elapsed time 30.353165s.
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/post_n4".
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.smoothness" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/smoothness".
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.PlotMosaicZoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/PlotMosaicZoomed".
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Executing "smoothness" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 11:36:59 | INFO     | nipype.workflow  | [Node] Executing "PlotMosaicZoomed" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 11:37:05 | INFO     | nipype.workflow  | [Node] Finished "PlotMosaicZoomed", elapsed time 6.056265s.
+2024-08-27 11:37:07 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/anat_report_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/ds_report_zoomed".
+2024-08-27 11:37:07 | INFO     | nipype.workflow  | [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 11:37:07 | INFO     | nipype.workflow  | [Node] Finished "ds_report_zoomed", elapsed time 0.004008s.
+2024-08-27 11:37:08 | INFO     | nipype.workflow  | [Node] Finished "smoothness", elapsed time 8.934272s.
+2024-08-27 11:37:11 | INFO     | nipype.workflow  | [Node] Finished "post_n4", elapsed time 11.342694s.
+2024-08-27 11:37:11 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/final_masked".
+2024-08-27 11:37:11 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/post_n4".
+2024-08-27 11:37:11 | INFO     | nipype.workflow  | [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:37:11 | INFO     | nipype.workflow  | [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:37:12 | INFO     | nipype.workflow  | [Node] Finished "final_masked", elapsed time 0.448991s.
+2024-08-27 11:37:29 | INFO     | nipype.workflow  | [Node] Finished "post_n4", elapsed time 17.847443s.
+2024-08-27 11:37:31 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/final_masked".
+2024-08-27 11:37:31 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.post_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/post_n4".
+2024-08-27 11:37:31 | INFO     | nipype.workflow  | [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:37:31 | INFO     | nipype.workflow  | [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:37:32 | INFO     | nipype.workflow  | [Node] Finished "final_masked", elapsed time 0.717291s.
+2024-08-27 11:37:50 | INFO     | nipype.workflow  | [Node] Finished "post_n4", elapsed time 18.563399s.
+2024-08-27 11:37:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.synthstrip_wf.final_masked" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/synthstrip_wf/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/final_masked".
+2024-08-27 11:37:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.synthstrip_wf.pre_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/pre_n4".
+2024-08-27 11:37:51 | INFO     | nipype.workflow  | [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:37:51 | INFO     | nipype.workflow  | [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:37:52 | INFO     | nipype.workflow  | [Node] Finished "final_masked", elapsed time 0.729776s.
+2024-08-27 11:37:55 | INFO     | nipype.workflow  | [Node] Finished "pre_n4", elapsed time 3.857244s.
+2024-08-27 11:37:57 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization".
+2024-08-27 11:37:57 | INFO     | nipype.workflow  | [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>
+2024-08-27 11:37:58 | INFO     | niworkflows      | Estimating initial transform using AffineInitializer
+2024-08-27 11:38:07 | INFO     | niworkflows      | Loading settings from file /home/oesteban/workspace/niworkflows/niworkflows/data/t1w-mni_registration_testing_000.json.
+2024-08-27 11:38:07 | INFO     | niworkflows      | Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1
+2024-08-27 11:38:10 | INFO     | niworkflows      | Successful spatial normalization (retry #1).
+2024-08-27 11:38:11 | INFO     | niworkflows      | Report - setting fixed (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/fixed_masked.nii.gz) and moving (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images
+2024-08-27 11:38:11 | INFO     | niworkflows      | Generating visual report
+2024-08-27 11:38:25 | INFO     | nipype.workflow  | [Node] Finished "SpatialNormalization", elapsed time 27.467892s.
+2024-08-27 11:38:25 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization".
+2024-08-27 11:38:25 | INFO     | nipype.workflow  | [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>
+2024-08-27 11:38:26 | INFO     | niworkflows      | Estimating initial transform using AffineInitializer
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:38:27 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:38:37 | INFO     | niworkflows      | Loading settings from file /home/oesteban/workspace/niworkflows/niworkflows/data/t1w-mni_registration_testing_000.json.
+2024-08-27 11:38:37 | INFO     | niworkflows      | Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1
+2024-08-27 11:38:38 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w0", elapsed time 10.846675s.
+2024-08-27 11:38:38 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w1", elapsed time 10.888601s.
+2024-08-27 11:38:38 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w2", elapsed time 10.631236s.
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w0" found cached.
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w1" found cached.
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs
+2024-08-27 11:38:39 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w2" found cached.
+2024-08-27 11:38:41 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/Enhance".
+2024-08-27 11:38:41 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/format_tpm_names".
+2024-08-27 11:38:41 | INFO     | nipype.workflow  | [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:38:41 | INFO     | nipype.workflow  | [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:38:41 | INFO     | niworkflows      | Successful spatial normalization (retry #1).
+2024-08-27 11:38:42 | INFO     | nipype.workflow  | [Node] Finished "Enhance", elapsed time 1.054897s.
+2024-08-27 11:38:43 | INFO     | nipype.workflow  | [Node] Finished "format_tpm_names", elapsed time 1.9741309999999999s.
+2024-08-27 11:38:43 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/Grad".
+2024-08-27 11:38:43 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/apply_mask".
+2024-08-27 11:38:43 | INFO     | nipype.workflow  | [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:38:43 | INFO     | nipype.workflow  | [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:38:43 | INFO     | niworkflows      | Report - setting fixed (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/fixed_masked.nii.gz) and moving (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images
+2024-08-27 11:38:43 | INFO     | niworkflows      | Generating visual report
+2024-08-27 11:38:44 | INFO     | nipype.workflow  | [Node] Finished "apply_mask", elapsed time 0.435109s.
+2024-08-27 11:38:45 | INFO     | nipype.workflow  | [Node] Finished "Grad", elapsed time 2.350575s.
+2024-08-27 11:38:47 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/GradientThreshold".
+2024-08-27 11:38:47 | INFO     | nipype.workflow  | [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:38:57 | INFO     | nipype.workflow  | [Node] Finished "SpatialNormalization", elapsed time 32.014365s.
+2024-08-27 11:38:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization".
+2024-08-27 11:38:59 | INFO     | nipype.workflow  | [Node] Executing "SpatialNormalization" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>
+2024-08-27 11:39:00 | INFO     | nipype.workflow  | [Node] Finished "GradientThreshold", elapsed time 12.785294s.
+2024-08-27 11:39:00 | INFO     | niworkflows      | Estimating initial transform using AffineInitializer
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/AirMaskWorkflow/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/ArtifactMask".
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:01 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Finished "ArtifactMask", elapsed time 3.387462s.
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/provenance".
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Finished "provenance", elapsed time 0.089871s.
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/ComputeQI2".
+2024-08-27 11:39:05 | INFO     | nipype.workflow  | [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>
+2024-08-27 11:39:12 | INFO     | niworkflows      | Loading settings from file /home/oesteban/workspace/niworkflows/niworkflows/data/t1w-mni_registration_testing_000.json.
+2024-08-27 11:39:12 | INFO     | niworkflows      | Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ ants_t1_to_mni, ants_t1_to_mni_Warped.nii.gz ] --transform Rigid[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.2 ] --convergence [ 20, 1e-07, 15 ] --smoothing-sigmas 4.0vox --shrink-factors 2 --use-histogram-matching 0 --transform Affine[ 1.0 ] --metric Mattes[ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/fixed_masked.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/moving_masked.nii.gz, 1, 56, Random, 0.1 ] --convergence [ 15, 1e-08, 5 ] --smoothing-sigmas 2.0vox --shrink-factors 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1
+2024-08-27 11:39:16 | INFO     | niworkflows      | Successful spatial normalization (retry #1).
+2024-08-27 11:39:18 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w1", elapsed time 16.483792s.
+2024-08-27 11:39:18 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w0", elapsed time 16.204354s.
+2024-08-27 11:39:18 | INFO     | niworkflows      | Report - setting fixed (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/fixed_masked.nii.gz) and moving (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/SpatialNormalization/ants_t1_to_mni_Warped.nii.gz) images
+2024-08-27 11:39:18 | INFO     | niworkflows      | Generating visual report
+2024-08-27 11:39:18 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w2", elapsed time 16.652714s.
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Finished "ComputeQI2", elapsed time 13.55119s.
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w0" found cached.
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w1" found cached.
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs
+2024-08-27 11:39:19 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w2" found cached.
+2024-08-27 11:39:21 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/format_tpm_names".
+2024-08-27 11:39:21 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/Enhance".
+2024-08-27 11:39:21 | INFO     | nipype.workflow  | [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:21 | INFO     | nipype.workflow  | [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:23 | INFO     | nipype.workflow  | [Node] Finished "Enhance", elapsed time 1.700428s.
+2024-08-27 11:39:23 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/Grad".
+2024-08-27 11:39:23 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/apply_mask".
+2024-08-27 11:39:23 | INFO     | nipype.workflow  | [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:23 | INFO     | nipype.workflow  | [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:39:24 | INFO     | nipype.workflow  | [Node] Finished "apply_mask", elapsed time 0.73607s.
+2024-08-27 11:39:24 | INFO     | nipype.workflow  | [Node] Finished "format_tpm_names", elapsed time 3.2379189999999998s.
+2024-08-27 11:39:28 | INFO     | nipype.workflow  | [Node] Finished "Grad", elapsed time 4.928857s.
+2024-08-27 11:39:29 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/GradientThreshold".
+2024-08-27 11:39:29 | INFO     | nipype.workflow  | [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:32 | INFO     | nipype.workflow  | [Node] Finished "SpatialNormalization", elapsed time 32.889s.
+2024-08-27 11:39:33 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.synthstrip_wf.synthstrip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/synthstrip".
+2024-08-27 11:39:33 | INFO     | nipype.workflow  | [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w0" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w2" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:35 | INFO     | nipype.workflow  | [Node] Executing "_tpms_std2t1w1" <niworkflows.interfaces.fixes.FixHeaderApplyTransforms>
+2024-08-27 11:39:49 | INFO     | nipype.workflow  | [Node] Finished "synthstrip", elapsed time 16.055575s.
+2024-08-27 11:39:50 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w0", elapsed time 14.771467s.
+2024-08-27 11:39:51 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w2", elapsed time 15.402748s.
+2024-08-27 11:39:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.synthstrip_wf.post_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/post_n4".
+2024-08-27 11:39:51 | INFO     | nipype.workflow  | [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 11:39:52 | INFO     | nipype.workflow  | [Node] Finished "_tpms_std2t1w1", elapsed time 16.204774s.
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w0".
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w0" - collecting precomputed outputs
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w0" found cached.
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w1".
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w1" - collecting precomputed outputs
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w1" found cached.
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Setting-up "_tpms_std2t1w2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/tpms_std2t1w/mapflow/_tpms_std2t1w2".
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] Cached "_tpms_std2t1w2" - collecting precomputed outputs
+2024-08-27 11:39:53 | INFO     | nipype.workflow  | [Node] "_tpms_std2t1w2" found cached.
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Finished "post_n4", elapsed time 3.459292s.
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.sp_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/sp_mask".
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Enhance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/Enhance".
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.synthstrip_wf.final_masked" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/final_masked".
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.format_tpm_names" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/format_tpm_names".
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Executing "format_tpm_names" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Executing "Enhance" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Executing "sp_mask" <mriqc.interfaces.diffusion.SpikingVoxelsMask>
+2024-08-27 11:39:55 | INFO     | nipype.workflow  | [Node] Finished "final_masked", elapsed time 0.104123s.
+2024-08-27 11:39:57 | INFO     | nipype.workflow  | [Node] Finished "Enhance", elapsed time 1.608401s.
+2024-08-27 11:39:57 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.Grad" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/Grad".
+2024-08-27 11:39:57 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.apply_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/apply_mask".
+2024-08-27 11:39:57 | INFO     | nipype.workflow  | [Node] Executing "apply_mask" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 11:39:57 | INFO     | nipype.workflow  | [Node] Executing "Grad" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:39:58 | INFO     | nipype.workflow  | [Node] Finished "apply_mask", elapsed time 0.709646s.
+2024-08-27 11:39:58 | INFO     | nipype.workflow  | [Node] Finished "format_tpm_names", elapsed time 3.228054s.
+2024-08-27 11:40:02 | INFO     | nipype.workflow  | [Node] Finished "Grad", elapsed time 5.039602s.
+2024-08-27 11:40:03 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.HeadMaskWorkflow.GradientThreshold" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/GradientThreshold".
+2024-08-27 11:40:03 | INFO     | nipype.workflow  | [Node] Executing "GradientThreshold" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:40:19 | INFO     | nipype.workflow  | [Node] Finished "sp_mask", elapsed time 24.295666s.
+2024-08-27 11:40:21 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.SpatialNormalization.EPI2MNI" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/EPI2MNI".
+2024-08-27 11:40:21 | INFO     | nipype.workflow  | [Node] Executing "EPI2MNI" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>
+2024-08-27 11:40:21 | INFO     | niworkflows      | Estimating initial transform using AffineInitializer
+2024-08-27 11:40:26 | INFO     | niworkflows      | Terminal outputs of initialization saved (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/EPI2MNI/stderr.nipype-init).
+2024-08-27 11:40:26 | INFO     | niworkflows      | Loading settings from file /home/oesteban/workspace/niworkflows/niworkflows/data/boldref-mni_registration_precise_000.json.
+2024-08-27 11:40:26 | INFO     | niworkflows      | Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/EPI2MNI/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ epi_to_mni, epi_to_mni_Warped.nii.gz ] --transform Rigid[ 0.05 ] --metric Mattes[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/SharpenEPI/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_average_corrected.nii.gz, 1, 56, Regular, 0.25 ] --convergence [ 10000x1000x100, 1e-06, 20 ] --smoothing-sigmas 4.0x2.0x1.0vox --shrink-factors 4x2x1 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --transform Affine[ 0.08 ] --metric Mattes[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/SharpenEPI/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_average_corrected.nii.gz, 1, 56, Regular, 0.25 ] --convergence [ 500x250x100, 1e-06, 20 ] --smoothing-sigmas 4.0x2.0x1.0vox --shrink-factors 8x4x2 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --transform SyN[ 0.1, 3.0, 0.0 ] --metric CC[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/SharpenEPI/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_average_corrected.nii.gz, 1, 4, None, 1 ] --convergence [ 100x30x20, 1e-06, 10 ] --smoothing-sigmas 3.0x2.0x1.0vox --shrink-factors 8x4x2 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/synthstrip_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1
+2024-08-27 11:40:28 | INFO     | nipype.workflow  | [Node] Finished "GradientThreshold", elapsed time 58.555637s.
+2024-08-27 11:40:29 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/AirMaskWorkflow/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/ArtifactMask".
+2024-08-27 11:40:29 | INFO     | nipype.workflow  | [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>
+2024-08-27 11:40:36 | INFO     | nipype.workflow  | [Node] Finished "ArtifactMask", elapsed time 6.756031s.
+2024-08-27 11:40:37 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/provenance".
+2024-08-27 11:40:37 | INFO     | nipype.workflow  | [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>
+2024-08-27 11:40:37 | INFO     | nipype.workflow  | [Node] Finished "provenance", elapsed time 0.121455s.
+2024-08-27 11:40:37 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/ComputeQI2".
+2024-08-27 11:40:37 | INFO     | nipype.workflow  | [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>
+2024-08-27 11:40:38 | INFO     | niworkflows      | Successful spatial normalization (retry #1).
+2024-08-27 11:40:38 | INFO     | niworkflows      | Report - setting fixed (/data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz) and moving (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/EPI2MNI/epi_to_mni_Warped.nii.gz) images
+2024-08-27 11:40:38 | INFO     | niworkflows      | Generating visual report
+2024-08-27 11:40:48 | INFO     | nipype.workflow  | [Node] Finished "ComputeQI2", elapsed time 10.942011s.
+2024-08-27 11:40:52 | INFO     | nipype.workflow  | [Node] Finished "EPI2MNI", elapsed time 31.208531s.
+2024-08-27 11:40:53 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.SpatialNormalization.ResampleSegmentation" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/SpatialNormalization/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ResampleSegmentation".
+2024-08-27 11:40:53 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/segmentation".
+2024-08-27 11:40:53 | INFO     | nipype.workflow  | [Node] Executing "ResampleSegmentation" <nipype.interfaces.ants.resampling.ApplyTransforms>
+2024-08-27 11:40:53 | INFO     | nipype.workflow  | [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>
+2024-08-27 11:41:00 | INFO     | nipype.workflow  | [Node] Finished "GradientThreshold", elapsed time 57.308551s.
+2024-08-27 11:41:01 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/AirMaskWorkflow/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/ArtifactMask".
+2024-08-27 11:41:01 | INFO     | nipype.workflow  | [Node] Executing "ArtifactMask" <mriqc.interfaces.anatomical.ArtifactMask>
+2024-08-27 11:41:02 | INFO     | nipype.workflow  | [Node] Finished "ResampleSegmentation", elapsed time 8.614239s.
+2024-08-27 11:41:03 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.get_wm" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_wm".
+2024-08-27 11:41:03 | INFO     | nipype.workflow  | [Node] Executing "get_wm" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 11:41:03 | INFO     | nipype.workflow  | [Node] Finished "get_wm", elapsed time 0.075867s.
+2024-08-27 11:41:07 | INFO     | nipype.workflow  | [Node] Finished "ArtifactMask", elapsed time 6.19143s.
+2024-08-27 11:41:09 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.provenance" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/provenance".
+2024-08-27 11:41:09 | INFO     | nipype.workflow  | [Node] Executing "provenance" <mriqc.interfaces.reports.AddProvenance>
+2024-08-27 11:41:09 | INFO     | nipype.workflow  | [Node] Finished "provenance", elapsed time 0.124534s.
+2024-08-27 11:41:09 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/ComputeQI2".
+2024-08-27 11:41:09 | INFO     | nipype.workflow  | [Node] Executing "ComputeQI2" <mriqc.interfaces.anatomical.ComputeQI2>
+2024-08-27 11:41:21 | INFO     | nipype.workflow  | [Node] Finished "ComputeQI2", elapsed time 11.197191s.
+2024-08-27 11:41:50 | INFO     | nipype.workflow  | [Node] Finished "segmentation", elapsed time 56.99796s.
+2024-08-27 11:41:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/harmonize".
+2024-08-27 11:41:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/segmentation".
+2024-08-27 11:41:51 | INFO     | nipype.workflow  | [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>
+2024-08-27 11:41:51 | INFO     | nipype.workflow  | [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>
+2024-08-27 11:41:52 | INFO     | nipype.workflow  | [Node] Finished "harmonize", elapsed time 1.022529s.
+2024-08-27 11:41:53 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/measures".
+2024-08-27 11:41:53 | INFO     | nipype.workflow  | [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>
+2024-08-27 11:41:57 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=5.9851)
+2024-08-27 11:41:57 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=5.9851)
+2024-08-27 11:41:57 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=5.9851)
+2024-08-27 11:42:01 | INFO     | nipype.workflow  | [Node] Finished "measures", elapsed time 8.070942s.
+2024-08-27 11:42:03 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/b3a5f4a9d843e446ad950ef6fb0ae90bb089996a/datasink".
+2024-08-27 11:42:03 | INFO     | nipype.workflow  | [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 11:42:03 | INFO     | nipype.workflow  | [Node] Finished "datasink", elapsed time 0.000561s.
+2024-08-27 11:43:24 | INFO     | nipype.workflow  | [Node] Finished "segmentation", elapsed time 93.151261s.
+2024-08-27 11:43:25 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/harmonize".
+2024-08-27 11:43:25 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.brain_tissue_segmentation.segmentation" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/brain_tissue_segmentation/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/segmentation".
+2024-08-27 11:43:25 | INFO     | nipype.workflow  | [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>
+2024-08-27 11:43:25 | INFO     | nipype.workflow  | [Node] Executing "segmentation" <nipype.interfaces.ants.segmentation.Atropos>
+2024-08-27 11:43:27 | INFO     | nipype.workflow  | [Node] Finished "harmonize", elapsed time 1.763296s.
+2024-08-27 11:43:27 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/measures".
+2024-08-27 11:43:27 | INFO     | nipype.workflow  | [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>
+2024-08-27 11:43:34 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=22.6659)
+2024-08-27 11:43:34 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=22.6659)
+2024-08-27 11:43:34 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=22.6659)
+2024-08-27 11:43:44 | INFO     | nipype.workflow  | [Node] Finished "measures", elapsed time 16.45052s.
+2024-08-27 11:43:45 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/87cbf48b89d5bfc0124d1820ee85a287c4afac2f/datasink".
+2024-08-27 11:43:45 | INFO     | nipype.workflow  | [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 11:43:45 | INFO     | nipype.workflow  | [Node] Finished "datasink", elapsed time 0.000496s.
+2024-08-27 11:44:56 | INFO     | nipype.workflow  | [Node] Finished "segmentation", elapsed time 90.610644s.
+2024-08-27 11:44:57 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.harmonize" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/harmonize".
+2024-08-27 11:44:57 | INFO     | nipype.workflow  | [Node] Executing "harmonize" <mriqc.interfaces.anatomical.Harmonize>
+2024-08-27 11:44:59 | INFO     | nipype.workflow  | [Node] Finished "harmonize", elapsed time 1.7793839999999999s.
+2024-08-27 11:44:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.measures" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/measures".
+2024-08-27 11:44:59 | INFO     | nipype.workflow  | [Node] Executing "measures" <mriqc.interfaces.anatomical.StructuralQC>
+2024-08-27 11:45:06 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=29.2755)
+2024-08-27 11:45:06 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=29.2755)
+2024-08-27 11:45:06 | WARNING  | nipype.interface | Estimated signal variation in the background was too small (MAD=0.0, sigma=29.2755)
+2024-08-27 11:45:16 | INFO     | nipype.workflow  | [Node] Finished "measures", elapsed time 17.060126s.
+2024-08-27 11:45:17 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/anatMRIQC/ComputeIQMs/a7db0d2342a6c2dc5cced1c27da05235aaecbd4c/datasink".
+2024-08-27 11:45:17 | INFO     | nipype.workflow  | [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 11:45:17 | INFO     | nipype.workflow  | [Node] Finished "datasink", elapsed time 0.000515s.
+2024-08-27 11:54:06 | INFO     | nipype.workflow  | [Node] Finished "estimate_hm", elapsed time 1153.102832s.
+2024-08-27 11:54:07 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.hmc_b0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/hmc_b0".
+2024-08-27 11:54:07 | INFO     | nipype.workflow  | [Node] Executing "hmc_b0" <nipype.interfaces.afni.preprocess.Volreg>
+2024-08-27 11:54:34 | INFO     | nipype.workflow  | [Node] Finished "hmc_b0", elapsed time 27.02061s.
+2024-08-27 11:54:35 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeFD".
+2024-08-27 11:54:35 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.drift" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/drift".
+2024-08-27 11:54:35 | INFO     | nipype.workflow  | [Node] Executing "ComputeFD" <nipype.algorithms.confounds.FramewiseDisplacement>
+2024-08-27 11:54:35 | INFO     | nipype.workflow  | [Node] Finished "ComputeFD", elapsed time 0.005772s.
+2024-08-27 11:54:35 | INFO     | nipype.workflow  | [Node] Executing "drift" <mriqc.interfaces.diffusion.CorrectSignalDrift>
+2024-08-27 11:54:36 | INFO     | nipype.interface | Correcting drift with 6 b=0 volumes, with global signal estimated at 1.0, 0.9907, 0.9953, 0.986, 0.9907, 0.9907.
+2024-08-27 11:54:57 | INFO     | nipype.workflow  | [Node] Finished "drift", elapsed time 21.923545s.
+2024-08-27 11:54:59 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwidenoise" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/dwidenoise".
+2024-08-27 11:54:59 | INFO     | nipype.workflow  | [Node] Executing "dwidenoise" <nipype.interfaces.mrtrix3.preprocess.DWIDenoise>
+2024-08-27 12:01:17 | INFO     | nipype.workflow  | [Node] Finished "dwidenoise", elapsed time 377.515523s.
+2024-08-27 12:01:19 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwimodel" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/dwimodel".
+2024-08-27 12:01:19 | INFO     | nipype.workflow  | [Node] Executing "dwimodel" <mriqc.interfaces.diffusion.DiffusionModel>
+2024-08-27 12:03:35 | INFO     | nipype.workflow  | [Node] Finished "dwimodel", elapsed time 135.839207s.
+2024-08-27 12:03:37 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.ComputeIQMs.estimate_sigma" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/ComputeIQMs/d827f817d7db52544dddb0ef8fe98b84f8217bb6/estimate_sigma".
+2024-08-27 12:03:37 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.cc_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/cc_mask".
+2024-08-27 12:03:37 | INFO     | nipype.workflow  | [Node] Executing "cc_mask" <mriqc.interfaces.diffusion.CCSegmentation>
+2024-08-27 12:03:37 | INFO     | nipype.workflow  | [Node] Executing "estimate_sigma" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 12:03:37 | INFO     | nipype.workflow  | [Node] Finished "estimate_sigma", elapsed time 0.069294s.
+2024-08-27 12:03:39 | INFO     | nipype.workflow  | [Node] Finished "cc_mask", elapsed time 1.3869099999999999s.
+2024-08-27 12:03:39 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.mosaic_fa" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_fa".
+2024-08-27 12:03:39 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.mosaic_md" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_md".
+2024-08-27 12:03:39 | INFO     | nipype.workflow  | [Node] Executing "mosaic_fa" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:03:39 | INFO     | nipype.workflow  | [Node] Executing "mosaic_md" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:03:42 | INFO     | nipype.workflow  | [Node] Finished "mosaic_fa", elapsed time 2.229389s.
+2024-08-27 12:03:42 | INFO     | nipype.workflow  | [Node] Finished "mosaic_md", elapsed time 2.259265s.
+2024-08-27 12:03:43 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.plot_heatmap" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/plot_heatmap".
+2024-08-27 12:03:43 | INFO     | nipype.workflow  | [Node] Executing "plot_heatmap" <nireports.interfaces.dmri.DWIHeatmap>
+2024-08-27 12:03:52 | INFO     | nipype.workflow  | [Node] Finished "plot_heatmap", elapsed time 8.138546s.
+2024-08-27 12:03:53 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_fa" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_fa".
+2024-08-27 12:03:53 | INFO     | nipype.workflow  | [Node] Executing "ds_report_fa" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:03:53 | INFO     | nipype.workflow  | [Node] Finished "ds_report_fa", elapsed time 0.004121s.
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_md" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_md".
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Executing "ds_report_md" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Finished "ds_report_md", elapsed time 0.00404s.
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_hm" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_hm".
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Executing "ds_report_hm" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Finished "ds_report_hm", elapsed time 0.003911s.
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc0".
+2024-08-27 12:03:54 | INFO     | nipype.workflow  | [Node] Executing "_apply_hmc0" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 12:04:48 | INFO     | nipype.workflow  | [Node] Finished "_apply_hmc0", elapsed time 54.310588s.
+2024-08-27 12:04:49 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc1".
+2024-08-27 12:04:49 | INFO     | nipype.workflow  | [Node] Executing "_apply_hmc1" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 12:05:40 | INFO     | nipype.workflow  | [Node] Finished "_apply_hmc1", elapsed time 50.624273s.
+2024-08-27 12:05:41 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc2".
+2024-08-27 12:05:41 | INFO     | nipype.workflow  | [Node] Executing "_apply_hmc2" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 12:06:32 | INFO     | nipype.workflow  | [Node] Finished "_apply_hmc2", elapsed time 50.520677s.
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc0".
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Cached "_apply_hmc0" - collecting precomputed outputs
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] "_apply_hmc0" found cached.
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc1".
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Cached "_apply_hmc1" - collecting precomputed outputs
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] "_apply_hmc1" found cached.
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Setting-up "_apply_hmc2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/fMRI_HMC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/apply_hmc/mapflow/_apply_hmc2".
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] Cached "_apply_hmc2" - collecting precomputed outputs
+2024-08-27 12:06:33 | INFO     | nipype.workflow  | [Node] "_apply_hmc2" found cached.
+2024-08-27 12:06:35 | INFO     | nipype.workflow  | [Node] Setting-up "_averages0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages0".
+2024-08-27 12:06:35 | INFO     | nipype.workflow  | [Node] Setting-up "_averages1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages1".
+2024-08-27 12:06:35 | INFO     | nipype.workflow  | [Node] Executing "_averages0" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:06:35 | INFO     | nipype.workflow  | [Node] Executing "_averages1" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Finished "_averages1", elapsed time 9.152114s.
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Finished "_averages0", elapsed time 9.469089s.
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Setting-up "_averages2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages2".
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Setting-up "_averages3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages3".
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Executing "_averages2" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:06:45 | INFO     | nipype.workflow  | [Node] Executing "_averages3" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:06:52 | INFO     | nipype.workflow  | [Node] Finished "_averages2", elapsed time 7.057197s.
+2024-08-27 12:06:53 | INFO     | nipype.workflow  | [Node] Finished "_averages3", elapsed time 7.279506s.
+2024-08-27 12:06:53 | INFO     | nipype.workflow  | [Node] Setting-up "_averages4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages4".
+2024-08-27 12:06:53 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev0".
+2024-08-27 12:06:53 | INFO     | nipype.workflow  | [Node] Executing "_averages4" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:06:53 | INFO     | nipype.workflow  | [Node] Executing "_stddev0" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Finished "_averages4", elapsed time 7.512421s.
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Setting-up "_averages0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages0".
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Cached "_averages0" - collecting precomputed outputs
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] "_averages0" found cached.
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Setting-up "_averages1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages1".
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Cached "_averages1" - collecting precomputed outputs
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] "_averages1" found cached.
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Setting-up "_averages2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages2".
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Cached "_averages2" - collecting precomputed outputs
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] "_averages2" found cached.
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Setting-up "_averages3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages3".
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] Cached "_averages3" - collecting precomputed outputs
+2024-08-27 12:07:01 | INFO     | nipype.workflow  | [Node] "_averages3" found cached.
+2024-08-27 12:07:02 | INFO     | nipype.workflow  | [Node] Setting-up "_averages4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages4".
+2024-08-27 12:07:02 | INFO     | nipype.workflow  | [Node] Cached "_averages4" - collecting precomputed outputs
+2024-08-27 12:07:02 | INFO     | nipype.workflow  | [Node] "_averages4" found cached.
+2024-08-27 12:07:03 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev1".
+2024-08-27 12:07:03 | INFO     | nipype.workflow  | [Node] Executing "_stddev1" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:07:04 | INFO     | nipype.workflow  | [Node] Finished "_stddev0", elapsed time 10.559932s.
+2024-08-27 12:07:05 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev2".
+2024-08-27 12:07:05 | INFO     | nipype.workflow  | [Node] Executing "_stddev2" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:07:17 | INFO     | nipype.workflow  | [Node] Finished "_stddev1", elapsed time 13.509974s.
+2024-08-27 12:07:17 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev3".
+2024-08-27 12:07:17 | INFO     | nipype.workflow  | [Node] Executing "_stddev3" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:07:19 | INFO     | nipype.workflow  | [Node] Finished "_stddev2", elapsed time 13.795047s.
+2024-08-27 12:07:19 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev4".
+2024-08-27 12:07:19 | INFO     | nipype.workflow  | [Node] Executing "_stddev4" <mriqc.interfaces.diffusion.WeightedStat>
+2024-08-27 12:07:30 | INFO     | nipype.workflow  | [Node] Finished "_stddev3", elapsed time 12.738145s.
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_mean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean0".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_mean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean1".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_mean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean2".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr0".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr1".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr2".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Executing "_mean0" <nipype.interfaces.afni.utils.TStat>
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_quality0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality0".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Executing "_mean1" <nipype.interfaces.afni.utils.TStat>
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_quality1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality1".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Setting-up "_quality2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality2".
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Executing "_compute_tsnr1" <nipype.algorithms.confounds.TSNR>
+2024-08-27 12:07:31 | INFO     | nipype.workflow  | [Node] Executing "_compute_tsnr2" <nipype.algorithms.confounds.TSNR>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Executing "_mean2" <nipype.interfaces.afni.utils.TStat>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Executing "_compute_tsnr0" <nipype.algorithms.confounds.TSNR>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Executing "_quality0" <nipype.interfaces.afni.preprocess.QualityIndex>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Executing "_quality1" <nipype.interfaces.afni.preprocess.QualityIndex>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Executing "_quality2" <nipype.interfaces.afni.preprocess.QualityIndex>
+2024-08-27 12:07:32 | INFO     | nipype.workflow  | [Node] Finished "_stddev4", elapsed time 12.907318s.
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev0".
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Cached "_stddev0" - collecting precomputed outputs
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] "_stddev0" found cached.
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev1".
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Cached "_stddev1" - collecting precomputed outputs
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] "_stddev1" found cached.
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev2".
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Cached "_stddev2" - collecting precomputed outputs
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] "_stddev2" found cached.
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev3".
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Cached "_stddev3" - collecting precomputed outputs
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] "_stddev3" found cached.
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Setting-up "_stddev4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev4".
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] Cached "_stddev4" - collecting precomputed outputs
+2024-08-27 12:07:33 | INFO     | nipype.workflow  | [Node] "_stddev4" found cached.
+2024-08-27 12:07:36 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise0".
+2024-08-27 12:07:36 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_noise0" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:38 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_noise0", elapsed time 2.876645s.
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Finished "_compute_tsnr2", elapsed time 7.663541s.
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Finished "_mean1", elapsed time 7.715721s.
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Finished "_compute_tsnr1", elapsed time 7.745724s.
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Finished "_mean2", elapsed time 7.736366s.
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise1".
+2024-08-27 12:07:39 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_noise1" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:40 | INFO     | nipype.workflow  | [Node] Finished "_compute_tsnr0", elapsed time 8.016094s.
+2024-08-27 12:07:40 | INFO     | nipype.workflow  | [Node] Finished "_mean0", elapsed time 8.214447s.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr0".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_compute_tsnr0" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_compute_tsnr0" found cached.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr1".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_compute_tsnr1" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_compute_tsnr1" found cached.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_compute_tsnr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/compute_tsnr/mapflow/_compute_tsnr2".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_compute_tsnr2" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_compute_tsnr2" found cached.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_mean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean0".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_mean0" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_mean0" found cached.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_mean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean1".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_mean1" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_mean1" found cached.
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Setting-up "_mean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/d16091cf980ee4e87975aed88d5ead13b8e4d45a/mean/mapflow/_mean2".
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] Cached "_mean2" - collecting precomputed outputs
+2024-08-27 12:07:41 | INFO     | nipype.workflow  | [Node] "_mean2" found cached.
+2024-08-27 12:07:42 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_noise1", elapsed time 2.377687s.
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.synthstrip_wf.pre_clip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/pre_clip".
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/SharpenEPI".
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Executing "pre_clip" <niworkflows.interfaces.nibabel.IntensityClip>
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Executing "SharpenEPI" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise2".
+2024-08-27 12:07:43 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_noise2" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:44 | INFO     | nipype.workflow  | [Node] Finished "pre_clip", elapsed time 0.710065s.
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean0".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean1".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean2".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise1".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise0".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicMean1" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicNoise1" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicMean0" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise2".
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicMean2" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicNoise2" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:45 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicNoise0" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:46 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_noise2", elapsed time 2.4314109999999998s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_quality2", elapsed time 15.304718s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicMean1", elapsed time 1.591569s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicNoise0", elapsed time 1.590156s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicMean0", elapsed time 1.613675s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicNoise2", elapsed time 1.744954s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicMean2", elapsed time 1.763882s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicNoise1", elapsed time 1.780942s.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.synthstrip_wf.pre_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/pre_n4".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD0".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean0".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicMean0" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicMean0" found cached.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise0".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean1".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicMean1" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicMean1" found cached.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD2".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD1".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicMean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicMean/mapflow/_PlotMosaicMean2".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicMean2" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicMean2" found cached.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Executing "pre_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicSD0" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicNoise0" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicNoise0" found cached.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicSD2" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise1".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicNoise1" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicNoise1" found cached.
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicSD1" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicNoise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicNoise/mapflow/_PlotMosaicNoise2".
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicNoise2" - collecting precomputed outputs
+2024-08-27 12:07:47 | INFO     | nipype.workflow  | [Node] "_PlotMosaicNoise2" found cached.
+2024-08-27 12:07:48 | INFO     | nipype.workflow  | [Node] Finished "_quality1", elapsed time 16.242761s.
+2024-08-27 12:07:49 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicSD2", elapsed time 1.744929s.
+2024-08-27 12:07:49 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicSD1", elapsed time 1.757994s.
+2024-08-27 12:07:49 | INFO     | nipype.workflow  | [Node] Finished "SharpenEPI", elapsed time 5.650246s.
+2024-08-27 12:07:49 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicSD0", elapsed time 1.97712s.
+2024-08-27 12:07:50 | INFO     | nipype.workflow  | [Node] Finished "pre_n4", elapsed time 2.58221s.
+2024-08-27 12:07:50 | INFO     | nipype.workflow  | [Node] Finished "_quality0", elapsed time 18.819965s.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean0".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.synthstrip_wf.synthstrip" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/synthstrip".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_quality0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality0".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Executing "synthstrip" <mriqc.interfaces.synthstrip.SynthStrip>
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_quality0" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_quality0" found cached.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_quality1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality1".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD0".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_quality1" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_quality1" found cached.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_quality2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/quality/mapflow/_quality2".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicSD0" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_PlotMosaicSD0" found cached.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_quality2" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_quality2" found cached.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD1".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicSD1" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_PlotMosaicSD1" found cached.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicSD2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicSD/mapflow/_PlotMosaicSD2".
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean0", elapsed time 0.00912s.
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicSD2" - collecting precomputed outputs
+2024-08-27 12:07:51 | INFO     | nipype.workflow  | [Node] "_PlotMosaicSD2" found cached.
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean1".
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean1", elapsed time 0.004224s.
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean2".
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean2", elapsed time 0.004166s.
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background0".
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background0", elapsed time 0.00413s.
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background1".
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background1", elapsed time 0.004145s.
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background2".
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:52 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background2", elapsed time 0.004086s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean0".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean0", elapsed time 0.0064s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean1".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean1", elapsed time 0.006369s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_mean2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_mean/mapflow/_ds_report_mean2".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_mean2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_mean2", elapsed time 0.006204s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background0".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background0", elapsed time 0.004162s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background1".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background1", elapsed time 0.004109s.
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_background2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_background/mapflow/_ds_report_background2".
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_background2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:54 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_background2", elapsed time 0.004142s.
+2024-08-27 12:07:55 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev0".
+2024-08-27 12:07:55 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:55 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev0", elapsed time 0.004157s.
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev1".
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev1", elapsed time 0.004142s.
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev2".
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:56 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev2", elapsed time 0.004419s.
+2024-08-27 12:07:57 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev0".
+2024-08-27 12:07:57 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:57 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev0", elapsed time 0.004003s.
+2024-08-27 12:07:57 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev1".
+2024-08-27 12:07:57 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:58 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev1", elapsed time 0.003799s.
+2024-08-27 12:07:58 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_stdev2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_stdev/mapflow/_ds_report_stdev2".
+2024-08-27 12:07:58 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_stdev2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:07:58 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_stdev2", elapsed time 0.003792s.
+2024-08-27 12:08:03 | INFO     | nipype.workflow  | [Node] Finished "synthstrip", elapsed time 11.941935s.
+2024-08-27 12:08:05 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dMRI_HMC.motion_correct" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dMRI_HMC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/motion_correct".
+2024-08-27 12:08:05 | INFO     | nipype.workflow  | [Node] Executing "motion_correct" <nipype.interfaces.afni.preprocess.Volreg>
+2024-08-27 12:32:27 | INFO     | nipype.workflow  | [Node] Finished "motion_correct", elapsed time 1461.212969s.
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dMRI_HMC.ComputeFD" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dMRI_HMC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ComputeFD".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.dMRI_HMC.bvec_rot" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dMRI_HMC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/bvec_rot".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "ComputeFD" <nipype.algorithms.confounds.FramewiseDisplacement>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "bvec_rot" <mriqc.interfaces.diffusion.RotateVectors>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.synthstrip_wf.post_n4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/post_n4".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.func_report_wf.dilated_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/dilated_mask".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Finished "ComputeFD", elapsed time 0.008896s.
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS0".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS1".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS2".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "dilated_mask" <niworkflows.interfaces.morphology.BinaryDilation>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "_ComputeDVARS0" <nipype.algorithms.confounds.ComputeDVARS>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "_ComputeDVARS1" <nipype.algorithms.confounds.ComputeDVARS>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "post_n4" <nipype.interfaces.ants.segmentation.N4BiasFieldCorrection>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness0".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness1".
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "_ComputeDVARS2" <nipype.algorithms.confounds.ComputeDVARS>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "_smoothness0" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Executing "_smoothness1" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Finished "dilated_mask", elapsed time 0.046061s.
+2024-08-27 12:32:28 | INFO     | nipype.workflow  | [Node] Finished "bvec_rot", elapsed time 0.081937s.
+2024-08-27 12:32:29 | INFO     | nipype.workflow  | [Node] Finished "_smoothness0", elapsed time 0.893902s.
+2024-08-27 12:32:29 | INFO     | nipype.workflow  | [Node] Finished "_smoothness1", elapsed time 0.98936s.
+2024-08-27 12:32:29 | INFO     | nipype.workflow  | [Node] Finished "post_n4", elapsed time 1.606404s.
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/EPI2MNI".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.synthstrip_wf.final_masked" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/final_masked".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.func_report_wf.subtract_mask" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/subtract_mask".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness2".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers0".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers1".
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "_smoothness2" <nipype.interfaces.afni.utils.FWHMx>
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "subtract_mask" <niworkflows.interfaces.morphology.BinarySubtraction>
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "final_masked" <niworkflows.interfaces.nibabel.ApplyMask>
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "_outliers0" <nipype.interfaces.afni.preprocess.OutlierCount>
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "EPI2MNI" <niworkflows.interfaces.reportlets.registration.SpatialNormalizationRPT>
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Executing "_outliers1" <nipype.interfaces.afni.preprocess.OutlierCount>
+2024-08-27 12:32:30 | INFO     | niworkflows      | Estimating initial transform using AffineInitializer
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Finished "subtract_mask", elapsed time 0.023535s.
+2024-08-27 12:32:30 | INFO     | nipype.workflow  | [Node] Finished "final_masked", elapsed time 0.064775s.
+2024-08-27 12:32:31 | INFO     | nipype.workflow  | [Node] Finished "_smoothness2", elapsed time 1.141486s.
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers2".
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor0".
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Executing "_outliers2" <nipype.interfaces.afni.preprocess.OutlierCount>
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Executing "_gcor0" <mriqc.interfaces.transitional.GCOR>
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness0".
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Cached "_smoothness0" - collecting precomputed outputs
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] "_smoothness0" found cached.
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness1".
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Cached "_smoothness1" - collecting precomputed outputs
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] "_smoothness1" found cached.
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Setting-up "_smoothness2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/smoothness/mapflow/_smoothness2".
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] Cached "_smoothness2" - collecting precomputed outputs
+2024-08-27 12:32:32 | INFO     | nipype.workflow  | [Node] "_smoothness2" found cached.
+2024-08-27 12:32:34 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor1".
+2024-08-27 12:32:34 | INFO     | nipype.workflow  | [Node] Executing "_gcor1" <mriqc.interfaces.transitional.GCOR>
+2024-08-27 12:32:35 | INFO     | niworkflows      | Terminal outputs of initialization saved (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/EPI2MNI/stderr.nipype-init).
+2024-08-27 12:32:35 | INFO     | niworkflows      | Loading settings from file /home/oesteban/workspace/niworkflows/niworkflows/data/boldref-mni_registration_precise_000.json.
+2024-08-27 12:32:35 | INFO     | niworkflows      | Retry #1, commandline: 
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 0 --initial-moving-transform [ /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/EPI2MNI/transform.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation LanczosWindowedSinc --output [ epi_to_mni, epi_to_mni_Warped.nii.gz ] --transform Rigid[ 0.05 ] --metric Mattes[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/SharpenEPI/sub-001_ses-20401034_task-rest_dir-RL_echo-1_part-mag_bold_desc-realigned_valid_tstat_corrected.nii.gz, 1, 56, Regular, 0.25 ] --convergence [ 10000x1000x100, 1e-06, 20 ] --smoothing-sigmas 4.0x2.0x1.0vox --shrink-factors 4x2x1 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --transform Affine[ 0.08 ] --metric Mattes[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/SharpenEPI/sub-001_ses-20401034_task-rest_dir-RL_echo-1_part-mag_bold_desc-realigned_valid_tstat_corrected.nii.gz, 1, 56, Regular, 0.25 ] --convergence [ 500x250x100, 1e-06, 20 ] --smoothing-sigmas 4.0x2.0x1.0vox --shrink-factors 8x4x2 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --transform SyN[ 0.1, 3.0, 0.0 ] --metric CC[ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/SharpenEPI/sub-001_ses-20401034_task-rest_dir-RL_echo-1_part-mag_bold_desc-realigned_valid_tstat_corrected.nii.gz, 1, 4, None, 1 ] --convergence [ 100x30x20, 1e-06, 10 ] --smoothing-sigmas 3.0x2.0x1.0vox --shrink-factors 8x4x2 --use-histogram-matching 1 --masks [ /data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz, /home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/synthstrip_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/synthstrip/clipped_corrected_desc-brain_mask.nii.gz ] --winsorize-image-intensities [ 0.005, 0.995 ]  --write-composite-transform 1
+2024-08-27 12:32:40 | INFO     | nipype.workflow  | [Node] Finished "_outliers1", elapsed time 10.185777s.
+2024-08-27 12:32:41 | INFO     | nipype.workflow  | [Node] Finished "_outliers0", elapsed time 11.383037s.
+2024-08-27 12:32:42 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor2".
+2024-08-27 12:32:42 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed0".
+2024-08-27 12:32:42 | INFO     | nipype.workflow  | [Node] Executing "_gcor2" <mriqc.interfaces.transitional.GCOR>
+2024-08-27 12:32:42 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicZoomed0" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:32:42 | INFO     | nipype.workflow  | [Node] Finished "_outliers2", elapsed time 10.400546s.
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers0".
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Cached "_outliers0" - collecting precomputed outputs
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] "_outliers0" found cached.
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers1".
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Cached "_outliers1" - collecting precomputed outputs
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] "_outliers1" found cached.
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Setting-up "_outliers2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/outliers/mapflow/_outliers2".
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Cached "_outliers2" - collecting precomputed outputs
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] "_outliers2" found cached.
+2024-08-27 12:32:44 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicZoomed0", elapsed time 2.12541s.
+2024-08-27 12:32:46 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed2".
+2024-08-27 12:32:46 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed1".
+2024-08-27 12:32:46 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicZoomed2" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:32:46 | INFO     | nipype.workflow  | [Node] Executing "_PlotMosaicZoomed1" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:32:47 | INFO     | niworkflows      | Successful spatial normalization (retry #1).
+2024-08-27 12:32:47 | INFO     | niworkflows      | Report - setting fixed (/data/datasets/templateflow-s3/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz) and moving (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/EPI2MNI/epi_to_mni_Warped.nii.gz) images
+2024-08-27 12:32:47 | INFO     | niworkflows      | Generating visual report
+2024-08-27 12:32:48 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicZoomed2", elapsed time 1.7627220000000001s.
+2024-08-27 12:32:48 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells0".
+2024-08-27 12:32:48 | INFO     | nipype.workflow  | [Node] Executing "_get_hmc_shells0" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 12:32:48 | INFO     | nipype.workflow  | [Node] Finished "_PlotMosaicZoomed1", elapsed time 1.983902s.
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed0".
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicZoomed0" - collecting precomputed outputs
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] "_PlotMosaicZoomed0" found cached.
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed1".
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicZoomed1" - collecting precomputed outputs
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] "_PlotMosaicZoomed1" found cached.
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Setting-up "_PlotMosaicZoomed2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/PlotMosaicZoomed/mapflow/_PlotMosaicZoomed2".
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] Cached "_PlotMosaicZoomed2" - collecting precomputed outputs
+2024-08-27 12:32:50 | INFO     | nipype.workflow  | [Node] "_PlotMosaicZoomed2" found cached.
+2024-08-27 12:32:51 | INFO     | nipype.workflow  | [Node] Finished "_gcor0", elapsed time 19.312519s.
+2024-08-27 12:32:52 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells1".
+2024-08-27 12:32:52 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells2".
+2024-08-27 12:32:52 | INFO     | nipype.workflow  | [Node] Executing "_get_hmc_shells2" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 12:32:52 | INFO     | nipype.workflow  | [Node] Executing "_get_hmc_shells1" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 12:32:52 | INFO     | nipype.workflow  | [Node] Finished "_gcor1", elapsed time 18.073604s.
+2024-08-27 12:32:54 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells3".
+2024-08-27 12:32:54 | INFO     | nipype.workflow  | [Node] Executing "_get_hmc_shells3" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 12:32:57 | INFO     | nipype.workflow  | [Node] Finished "_gcor2", elapsed time 15.278987s.
+2024-08-27 12:32:57 | INFO     | nipype.workflow  | [Node] Finished "_get_hmc_shells0", elapsed time 9.386589s.
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells4".
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Executing "_get_hmc_shells4" <mriqc.interfaces.diffusion.ExtractOrientations>
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor0".
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Cached "_gcor0" - collecting precomputed outputs
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] "_gcor0" found cached.
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor1".
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Cached "_gcor1" - collecting precomputed outputs
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] "_gcor1" found cached.
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Setting-up "_gcor2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/gcor/mapflow/_gcor2".
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] Cached "_gcor2" - collecting precomputed outputs
+2024-08-27 12:32:58 | INFO     | nipype.workflow  | [Node] "_gcor2" found cached.
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed0".
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed0", elapsed time 0.004539s.
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed1".
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed1", elapsed time 0.004567s.
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed2".
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:00 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed2", elapsed time 0.004346s.
+2024-08-27 12:33:01 | INFO     | nipype.workflow  | [Node] Finished "EPI2MNI", elapsed time 31.415999s.
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/SpatialNormalization/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ResampleSegmentation".
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed0".
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Executing "ResampleSegmentation" <nipype.interfaces.ants.resampling.ApplyTransforms>
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed0", elapsed time 0.005036s.
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed1".
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed1", elapsed time 0.004386s.
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_zoomed2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_zoomed/mapflow/_ds_report_zoomed2".
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_zoomed2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_zoomed2", elapsed time 0.00431s.
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Finished "_ComputeDVARS1", elapsed time 34.193132s.
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise3".
+2024-08-27 12:33:02 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_noise3" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:33:03 | INFO     | nipype.workflow  | [Node] Finished "_ComputeDVARS2", elapsed time 34.884632s.
+2024-08-27 12:33:03 | INFO     | nipype.workflow  | [Node] Finished "_get_hmc_shells1", elapsed time 10.945014s.
+2024-08-27 12:33:03 | INFO     | nipype.workflow  | [Node] Finished "_ComputeDVARS0", elapsed time 35.028119s.
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS0".
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Cached "_ComputeDVARS0" - collecting precomputed outputs
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] "_ComputeDVARS0" found cached.
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS1".
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Cached "_ComputeDVARS1" - collecting precomputed outputs
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] "_ComputeDVARS1" found cached.
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Setting-up "_ComputeDVARS2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ComputeDVARS/mapflow/_ComputeDVARS2".
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] Cached "_ComputeDVARS2" - collecting precomputed outputs
+2024-08-27 12:33:04 | INFO     | nipype.workflow  | [Node] "_ComputeDVARS2" found cached.
+2024-08-27 12:33:05 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_noise3", elapsed time 2.388429s.
+2024-08-27 12:33:05 | INFO     | nipype.workflow  | [Node] Finished "ResampleSegmentation", elapsed time 3.186662s.
+2024-08-27 12:33:06 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.funcMRIQC.func_report_wf.parcels" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/parcels".
+2024-08-27 12:33:06 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise4".
+2024-08-27 12:33:06 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_noise4" <nireports.interfaces.mosaic.PlotMosaic>
+2024-08-27 12:33:06 | INFO     | nipype.workflow  | [Node] Executing "parcels" <nipype.interfaces.utility.wrappers.Function>
+2024-08-27 12:33:06 | INFO     | nipype.workflow  | [Node] Finished "parcels", elapsed time 0.022971s.
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries0".
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries1".
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries2".
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Executing "_timeseries0" <mriqc.interfaces.functional.GatherTimeseries>
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Executing "_timeseries1" <mriqc.interfaces.functional.GatherTimeseries>
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Executing "_timeseries2" <mriqc.interfaces.functional.GatherTimeseries>
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Finished "_timeseries0", elapsed time 0.030844s.
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Finished "_timeseries1", elapsed time 0.031957s.
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Finished "_timeseries2", elapsed time 0.033166s.
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Finished "_get_hmc_shells2", elapsed time 16.140672s.
+2024-08-27 12:33:08 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_noise4", elapsed time 2.322204s.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot0".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Executing "_BigPlot0" <nireports.interfaces.fmri.FMRISummary>
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise0".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_noise0" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_mosaic_noise0" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries0".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise1".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_noise1" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_timeseries0" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_mosaic_noise1" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_timeseries0" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise2".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries1".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_noise2" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_mosaic_noise2" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_timeseries1" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_timeseries1" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise3".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_noise3" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_mosaic_noise3" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_timeseries2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/timeseries/mapflow/_timeseries2".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_noise4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_noise/mapflow/_mosaic_noise4".
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_noise4" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_mosaic_noise4" found cached.
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] Cached "_timeseries2" - collecting precomputed outputs
+2024-08-27 12:33:10 | INFO     | nipype.workflow  | [Node] "_timeseries2" found cached.
+2024-08-27 12:33:12 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr0".
+2024-08-27 12:33:12 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_snr0" <nireports.interfaces.reporting.base.SimpleBeforeAfterRPT>
+2024-08-27 12:33:12 | INFO     | nipype.interface | Report - setting before (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev0/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_std.nii.gz) and after (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages0/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_mean.nii.gz) images
+2024-08-27 12:33:12 | INFO     | nipype.interface | Generating visual report
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise0".
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise0", elapsed time 0.004454s.
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise1".
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise1", elapsed time 0.004344s.
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise2".
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise2", elapsed time 0.005486s.
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise3".
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise3" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:14 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise3", elapsed time 0.004359s.
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise4".
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise4" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise4", elapsed time 0.004304s.
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries0".
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries0", elapsed time 0.003537s.
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries1".
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries1", elapsed time 0.0035s.
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries2".
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:15 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries2", elapsed time 0.003567s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise0".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise0", elapsed time 0.006231s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise1".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise1", elapsed time 0.005224s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise2".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise2", elapsed time 0.005225s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise3".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise3" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise3", elapsed time 0.005315s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_noise4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_noise/mapflow/_ds_report_noise4".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_noise4" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_noise4", elapsed time 0.00744s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries0".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries0", elapsed time 0.005475s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries1".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries1", elapsed time 0.004099s.
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_timeseries2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_timeseries/mapflow/_ds_timeseries2".
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Executing "_ds_timeseries2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:16 | INFO     | nipype.workflow  | [Node] Finished "_ds_timeseries2", elapsed time 0.006332s.
+2024-08-27 12:33:20 | INFO     | nipype.workflow  | [Node] Finished "_get_hmc_shells3", elapsed time 26.419651s.
+2024-08-27 12:33:23 | INFO     | nipype.workflow  | [Node] Finished "_BigPlot0", elapsed time 13.299474s.
+2024-08-27 12:33:24 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot1".
+2024-08-27 12:33:24 | INFO     | nipype.workflow  | [Node] Executing "_BigPlot1" <nireports.interfaces.fmri.FMRISummary>
+2024-08-27 12:33:28 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_snr0", elapsed time 16.365141s.
+2024-08-27 12:33:30 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr1".
+2024-08-27 12:33:30 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_snr1" <nireports.interfaces.reporting.base.SimpleBeforeAfterRPT>
+2024-08-27 12:33:30 | INFO     | nipype.interface | Report - setting before (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev1/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_std.nii.gz) and after (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages1/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_mean.nii.gz) images
+2024-08-27 12:33:30 | INFO     | nipype.interface | Generating visual report
+2024-08-27 12:33:33 | INFO     | nipype.workflow  | [Node] Finished "_get_hmc_shells4", elapsed time 34.884439s.
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells0".
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Cached "_get_hmc_shells0" - collecting precomputed outputs
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] "_get_hmc_shells0" found cached.
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells1".
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Cached "_get_hmc_shells1" - collecting precomputed outputs
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] "_get_hmc_shells1" found cached.
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells2".
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Cached "_get_hmc_shells2" - collecting precomputed outputs
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] "_get_hmc_shells2" found cached.
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells3".
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Cached "_get_hmc_shells3" - collecting precomputed outputs
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] "_get_hmc_shells3" found cached.
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Setting-up "_get_hmc_shells4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/get_hmc_shells/mapflow/_get_hmc_shells4".
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] Cached "_get_hmc_shells4" - collecting precomputed outputs
+2024-08-27 12:33:34 | INFO     | nipype.workflow  | [Node] "_get_hmc_shells4" found cached.
+2024-08-27 12:33:36 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.ComputeIQMs.measures" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/ComputeIQMs/d827f817d7db52544dddb0ef8fe98b84f8217bb6/measures".
+2024-08-27 12:33:36 | INFO     | nipype.workflow  | [Node] Executing "measures" <mriqc.interfaces.diffusion.DiffusionQC>
+2024-08-27 12:33:36 | INFO     | nipype.workflow  | [Node] Finished "_BigPlot1", elapsed time 12.287219s.
+2024-08-27 12:33:38 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot2".
+2024-08-27 12:33:38 | INFO     | nipype.workflow  | [Node] Executing "_BigPlot2" <nireports.interfaces.fmri.FMRISummary>
+2024-08-27 12:33:47 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_snr1", elapsed time 16.862963s.
+2024-08-27 12:33:48 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr2".
+2024-08-27 12:33:48 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_snr2" <nireports.interfaces.reporting.base.SimpleBeforeAfterRPT>
+2024-08-27 12:33:48 | INFO     | nipype.interface | Report - setting before (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev2/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_std.nii.gz) and after (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages2/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_mean.nii.gz) images
+2024-08-27 12:33:48 | INFO     | nipype.interface | Generating visual report
+2024-08-27 12:33:51 | INFO     | nipype.workflow  | [Node] Finished "_BigPlot2", elapsed time 12.973369s.
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot0".
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Cached "_BigPlot0" - collecting precomputed outputs
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] "_BigPlot0" found cached.
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot1".
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Cached "_BigPlot1" - collecting precomputed outputs
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] "_BigPlot1" found cached.
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Setting-up "_BigPlot2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/BigPlot/mapflow/_BigPlot2".
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] Cached "_BigPlot2" - collecting precomputed outputs
+2024-08-27 12:33:52 | INFO     | nipype.workflow  | [Node] "_BigPlot2" found cached.
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet0".
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet0", elapsed time 0.004416s.
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet1".
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet1", elapsed time 0.005612s.
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet2".
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:56 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet2", elapsed time 0.004315s.
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet0".
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet0", elapsed time 0.004033s.
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet1".
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet1", elapsed time 0.003967s.
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_carpet2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/func_report_wf/d16091cf980ee4e87975aed88d5ead13b8e4d45a/ds_report_carpet/mapflow/_ds_report_carpet2".
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_carpet2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:33:58 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_carpet2", elapsed time 0.004168s.
+2024-08-27 12:34:04 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_snr2", elapsed time 16.425144s.
+2024-08-27 12:34:06 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr3".
+2024-08-27 12:34:06 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_snr3" <nireports.interfaces.reporting.base.SimpleBeforeAfterRPT>
+2024-08-27 12:34:06 | INFO     | nipype.interface | Report - setting before (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev3/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_std.nii.gz) and after (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages3/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_mean.nii.gz) images
+2024-08-27 12:34:06 | INFO     | nipype.interface | Generating visual report
+2024-08-27 12:34:22 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_snr3", elapsed time 16.121196s.
+2024-08-27 12:34:24 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr4".
+2024-08-27 12:34:24 | INFO     | nipype.workflow  | [Node] Executing "_mosaic_snr4" <nireports.interfaces.reporting.base.SimpleBeforeAfterRPT>
+2024-08-27 12:34:24 | INFO     | nipype.interface | Report - setting before (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/stddev/mapflow/_stddev4/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_std.nii.gz) and after (/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/d827f817d7db52544dddb0ef8fe98b84f8217bb6/averages/mapflow/_averages4/sub-001_ses-20401034_acq-highres_dir-RL_dwi_valid_nodriftfull_mean.nii.gz) images
+2024-08-27 12:34:24 | INFO     | nipype.interface | Generating visual report
+2024-08-27 12:34:40 | INFO     | nipype.workflow  | [Node] Finished "_mosaic_snr4", elapsed time 16.046535s.
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr0".
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_snr0" - collecting precomputed outputs
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] "_mosaic_snr0" found cached.
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr1".
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_snr1" - collecting precomputed outputs
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] "_mosaic_snr1" found cached.
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr2".
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_snr2" - collecting precomputed outputs
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] "_mosaic_snr2" found cached.
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr3".
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_snr3" - collecting precomputed outputs
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] "_mosaic_snr3" found cached.
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Setting-up "_mosaic_snr4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/mosaic_snr/mapflow/_mosaic_snr4".
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] Cached "_mosaic_snr4" - collecting precomputed outputs
+2024-08-27 12:34:42 | INFO     | nipype.workflow  | [Node] "_mosaic_snr4" found cached.
+2024-08-27 12:34:44 | INFO     | nipype.workflow  | [Node] Setting-up "_measures0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures0".
+2024-08-27 12:34:44 | INFO     | nipype.workflow  | [Node] Executing "_measures0" <mriqc.interfaces.functional.FunctionalQC>
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr0".
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr0", elapsed time 0.004594s.
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr1".
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr1", elapsed time 0.004547s.
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr2".
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr2", elapsed time 0.004379s.
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr3".
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr3" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:46 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr3", elapsed time 0.004572s.
+2024-08-27 12:34:47 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr4".
+2024-08-27 12:34:47 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr4" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:47 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr4", elapsed time 0.004535s.
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr0".
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr0" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr0", elapsed time 0.004232s.
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr1".
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr1" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr1", elapsed time 0.004066s.
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr2".
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr2" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr2", elapsed time 0.003965s.
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr3" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr3".
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr3" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr3", elapsed time 0.004005s.
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Setting-up "_ds_report_snr4" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/dwi_report_wf/d827f817d7db52544dddb0ef8fe98b84f8217bb6/ds_report_snr/mapflow/_ds_report_snr4".
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Executing "_ds_report_snr4" <mriqc.interfaces.DerivativesDataSink>
+2024-08-27 12:34:48 | INFO     | nipype.workflow  | [Node] Finished "_ds_report_snr4", elapsed time 0.003958s.
+2024-08-27 12:34:49 | INFO     | nipype.workflow  | [Node] Finished "measures", elapsed time 73.402712s.
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Setting-up "mriqc_wf.dwiMRIQC.ComputeIQMs.datasink" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/dwiMRIQC/ComputeIQMs/d827f817d7db52544dddb0ef8fe98b84f8217bb6/datasink".
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Finished "datasink", elapsed time 0.000842s.
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Finished "_measures0", elapsed time 6.068505s.
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Setting-up "_measures1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures1".
+2024-08-27 12:34:50 | INFO     | nipype.workflow  | [Node] Executing "_measures1" <mriqc.interfaces.functional.FunctionalQC>
+2024-08-27 12:34:52 | INFO     | nipype.workflow  | [Node] Setting-up "_measures2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures2".
+2024-08-27 12:34:52 | INFO     | nipype.workflow  | [Node] Executing "_measures2" <mriqc.interfaces.functional.FunctionalQC>
+2024-08-27 12:34:56 | INFO     | nipype.workflow  | [Node] Finished "_measures1", elapsed time 5.545082s.
+2024-08-27 12:34:57 | INFO     | nipype.workflow  | [Node] Finished "_measures2", elapsed time 5.2073599999999995s.
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Setting-up "_measures0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures0".
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Cached "_measures0" - collecting precomputed outputs
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] "_measures0" found cached.
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Setting-up "_measures1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures1".
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Cached "_measures1" - collecting precomputed outputs
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] "_measures1" found cached.
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Setting-up "_measures2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/measures/mapflow/_measures2".
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] Cached "_measures2" - collecting precomputed outputs
+2024-08-27 12:34:58 | INFO     | nipype.workflow  | [Node] "_measures2" found cached.
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink0".
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Executing "_datasink0" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Finished "_datasink0", elapsed time 0.000558s.
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink1".
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Executing "_datasink1" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Finished "_datasink1", elapsed time 0.000528s.
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink2".
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Executing "_datasink2" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:02 | INFO     | nipype.workflow  | [Node] Finished "_datasink2", elapsed time 0.000542s.
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink0" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink0".
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Executing "_datasink0" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Finished "_datasink0", elapsed time 0.000536s.
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink1" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink1".
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Executing "_datasink1" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Finished "_datasink1", elapsed time 0.000497s.
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Setting-up "_datasink2" in "/home/oesteban/tmp/hcph-mriqc/work/mriqc_wf/funcMRIQC/ComputeIQMs/d16091cf980ee4e87975aed88d5ead13b8e4d45a/datasink/mapflow/_datasink2".
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Executing "_datasink2" <mriqc.interfaces.bids.IQMFileSink>
+2024-08-27 12:35:04 | INFO     | nipype.workflow  | [Node] Finished "_datasink2", elapsed time 0.000498s.
+2024-08-27 12:35:06 | INFO     | nipype.workflow  | Generating reports...
+2024-08-27 12:35:09 | INFO     | nipype.workflow  | Report generation finished (5 reports).
+2024-08-27 12:35:09 | IMPORTANT | mriqc            | Participant level finished successfully averaging 00h 12min 08s per subject.
+2024-08-27 12:35:09 | INFO     | mriqc            | Generating BIDS derivatives metadata.
+----------------------------------------------------------------
+  MRIQC completed (elapsed time 01h 00min 42s).
+----------------------------------------------------------------
+
