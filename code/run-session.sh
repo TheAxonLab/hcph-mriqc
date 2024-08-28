@@ -20,8 +20,6 @@ git checkout -b add/ses-${SESSION}
 
 # Prepare execution
 pushd $WORKDIR
-source activate fmriprep
-
 # Execute MRIQC
 mriqc ${DATASET_PATH} ${OUTPUT_PATH} participant --participant-label 001 --nprocs 20 --omp-nthreads 12 -w $WORKDIR -vv --bids-database-dir ${DATASET_PATH}/.bids-index/ --dsname ${DATASET_NAME} --no-sub --bids-filter-file $FILTER_FILE && rm -rf $WORKDIR
 popd
@@ -32,7 +30,7 @@ datalad push --to=ria-storage
 datalad push --to=origin
 
 # Send PR
-gh pr create -B "master" -r "@celprov" -a "@me" -t "ADD: MRIQC for $SESSION" -b "Automatically generated PR with MRIQC results for session $SESSION"
+gh pr create -B "master" -r "celprov" -a "@me" -t "ADD: MRIQC for $SESSION" -b "Automatically generated PR with MRIQC results for session $SESSION"
 
 
 
