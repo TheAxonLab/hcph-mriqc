@@ -1,0 +1,6 @@
+{
+  "bold": {"session": ["sesid"]},
+  "dwi": {"session": ["sesid"]},
+  "T1w": {"session": ["sesid"]},
+  "T2w": {"session": ["sesid"]}
+}
