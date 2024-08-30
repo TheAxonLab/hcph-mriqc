@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="NiReports: https://www.nipreps.org/" />
+<title>sub-001_ses-pilot011_acq-lowres_dir-PA_dwi :: Diffusion MRI MRIQC report</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script>
+var timestamp = Date.now()
+
+function read_form() {
+    var ds = "HCPh";
+    var sub = "sub-001_ses-pilot011_acq-lowres_dir-PA_dwi.nii.gz";
+
+    var artifacts = [];
+    $('#qcartifacts-group input:checked').each(function() {
+        artifacts.push($(this).attr('name'));
+    });
+
+    var rating = $('#qcslider').val();
+    var payload = {
+        'dataset': ds,
+        'subject': sub,
+        'rating': rating,
+        'artifacts': artifacts,
+        'time_sec': (Date.now() - timestamp) / 1000,
+        'confidence': $('#qcextra-confidence').val(),
+        'comments': $('#qcextra-comments').val()
+    };
+
+    var file = new Blob([JSON.stringify(payload)], {type: 'text/json'});
+    $('#btn-download').attr('href', URL.createObjectURL(file));
+    $('#btn-download').attr('download', payload['dataset'] + "_" + payload['subject'] + ".json");
+    return payload
+};
+
+function toggle_rating() {
+    if ($('#qcrating-menu').hasClass('d-none')) {
+        $('#qcrating-menu').removeClass('d-none');
+        $('#qcrating-toggler').prop('checked', true);
+    } else {
+        $('#qcrating-menu').addClass('d-none');
+        $('#qcrating-toggler').prop('checked', false);
+    }
+};
+
+$(window).on('load',function(){
+    var authorization = $('#btn-post').val()
+    if (authorization.includes("secret_token")) {
+        $('#btn-post').addClass('d-none');
+    };
+    timestamp = Date.now();
+});
+
+</script>
+<style type="text/css">
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  margin-bottom: 8px;
+  margin-left: 10%;
+  width: 80%;
+  height: 5px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url('https://raw.githubusercontent.com/nipreps/nireports/main/assets/slider-handle.png');
+  cursor: pointer;
+  z-index: 2000 !important;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url('https://raw.githubusercontent.com/nipreps/nireports/main/assets/slider-handle.png');
+  cursor: pointer;
+  z-index: 2000 !important;
+}
+
+</style>
+</head>
+<body style="font-family: helvetica;">
+<nav class="navbar fixed-top navbar-expand-lg bg-light">
+<div class="container-fluid">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#Summary">Summary</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDWI shells" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#DWI shells">
+            DWI shells
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#acquisition-lowres_bval-0_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi">Reports for: bval <span class="bids-entity">0</span>.</a></li>
+                <li><a class="dropdown-item" href="#acquisition-lowres_bval-1000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi">Reports for: bval <span class="bids-entity">1000</span>.</a></li>
+                <li><a class="dropdown-item" href="#acquisition-lowres_bval-2000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi">Reports for: bval <span class="bids-entity">2000</span>.</a></li>
+                <li><a class="dropdown-item" href="#acquisition-lowres_bval-3000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi">Reports for: bval <span class="bids-entity">3000</span>.</a></li>
+                <li><a class="dropdown-item" href="#acquisition-lowres_bval-700_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi">Reports for: bval <span class="bids-entity">700</span>.</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#About">
+            About
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#errors">Errors</a></li>
+                <li><a class="dropdown-item" href="#meta-about-metadata">Reproducibility and provenance information</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="d-flex flex-row-reverse">
+<div class="form-check form-switch align-self-center flex-fill me-4">
+<input class="form-check-input" type="checkbox" id="qcrating-toggler"></input>
+<label class="form-check-label" style="width: 100pt;" for="qcrating-toggler">Rating widget</label>
+</div>
+</div>
+</nav>
+<noscript>
+    <h1 class="text-danger"> The navigation menu uses Javascript. Without it this report might not work as expected </h1>
+</noscript>
+
+    <div id="Summary" class="mt-5">
+    <h1 class="sub-report-title pt-5 ps-4">Summary</h1>
+        <div id="acquisition-lowres_datatype-figures_desc-heatmap_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Shell-wise joint distribution of SNR vs. FA in every voxel</h3><p class="elem-caption">This visualization divides the data by shells, and shows the joint distribution of SNR vs. FA. At the bottom, the distributions are marginalized for SNR. Please note that the figures of SNR provided are calculated with a coarse estimation of the signal variability, and therefore should be interpreted with care.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-heatmap_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-heatmap_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-heatmap_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_datatype-figures_desc-fa_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Fractional anisotropy (FA) map</h3><p class="elem-caption">Reconstructed FA map.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-fa_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-fa_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-fa_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_datatype-figures_desc-md_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">Mean diffusivity (MD) map</h3><p class="elem-caption">Reconstructed MD map.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-md_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-md_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-md_dwi.svg</a></small>
+
+        </div>
+    </div>
+    <div id="DWI shells" class="mt-5">
+    <h1 class="sub-report-title pt-5 ps-4">DWI shells</h1>
+        <div id="acquisition-lowres_bval-0_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: bval <span class="bids-entity">0</span>.</h2><h3 class="run-title mt-3">Voxel-wise average and standard deviation across volumes in this <em>DWI shell</em>.</h3><p class="elem-caption">This panel shows mosaics flickering between the voxel-wise average and standard deviation for each shell.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00000_dwi.svg" style="">
+Problem loading figure sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00000_dwi.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-0_datatype-figures_desc-background_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">View of the background of the voxel-wise average of this <em>DWI shell</em></h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00000_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-1000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: bval <span class="bids-entity">1000</span>.</h2><h3 class="run-title mt-3">Voxel-wise average and standard deviation across volumes in this <em>DWI shell</em>.</h3><p class="elem-caption">This panel shows mosaics flickering between the voxel-wise average and standard deviation for each shell.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-01000_dwi.svg" style="">
+Problem loading figure sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-01000_dwi.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-01000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-01000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-1000_datatype-figures_desc-background_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">View of the background of the voxel-wise average of this <em>DWI shell</em></h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-01000_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-01000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-01000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-2000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: bval <span class="bids-entity">2000</span>.</h2><h3 class="run-title mt-3">Voxel-wise average and standard deviation across volumes in this <em>DWI shell</em>.</h3><p class="elem-caption">This panel shows mosaics flickering between the voxel-wise average and standard deviation for each shell.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-02000_dwi.svg" style="">
+Problem loading figure sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-02000_dwi.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-02000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-02000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-2000_datatype-figures_desc-background_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">View of the background of the voxel-wise average of this <em>DWI shell</em></h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-02000_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-02000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-02000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-3000_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: bval <span class="bids-entity">3000</span>.</h2><h3 class="run-title mt-3">Voxel-wise average and standard deviation across volumes in this <em>DWI shell</em>.</h3><p class="elem-caption">This panel shows mosaics flickering between the voxel-wise average and standard deviation for each shell.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-03000_dwi.svg" style="">
+Problem loading figure sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-03000_dwi.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-03000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-03000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-3000_datatype-figures_desc-background_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">View of the background of the voxel-wise average of this <em>DWI shell</em></h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-03000_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-03000_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-03000_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-700_datatype-figures_desc-avgstd_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reports for: bval <span class="bids-entity">700</span>.</h2><h3 class="run-title mt-3">Voxel-wise average and standard deviation across volumes in this <em>DWI shell</em>.</h3><p class="elem-caption">This panel shows mosaics flickering between the voxel-wise average and standard deviation for each shell.</p>                    <div class="reportlet">
+<object class="svg-reportlet" type="image/svg+xml" data="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00700_dwi.svg" style="">
+Problem loading figure sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00700_dwi.svg. If the link below works, please try reloading the report in your browser.</object>
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00700_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-avgstd_bval-00700_dwi.svg</a></small>
+
+        </div>
+        <div id="acquisition-lowres_bval-700_datatype-figures_desc-background_direction-PA_session-pilot011_subject-001_suffix-dwi" class="ps-4 pe-4 mb-2">
+<h3 class="run-title mt-3">View of the background of the voxel-wise average of this <em>DWI shell</em></h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00700_dwi.svg" style="width: 100%" />
+</div>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00700_dwi.svg" target="_blank">sub-001/figures/sub-001_ses-pilot011_acq-lowres_dir-PA_desc-background_bval-00700_dwi.svg</a></small>
+
+        </div>
+    </div>
+    <div id="About" class="mt-5">
+    <h1 class="sub-report-title pt-5 ps-4">About</h1>
+        <div id="errors" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Errors</h2>                    <p class="alert alert-success" role="alert">No errors to report!</p>
+        </div>
+        <div id="meta-about-metadata" class="ps-4 pe-4 mb-2">
+<h2 class="sub-report-group mt-4">Reproducibility and provenance information</h2><p class="elem-caption">Thanks for using <em>MRIQC</em>. The following information may assist in
+reconstructing the provenance of the corresponding derivatives.
+</p>                    <div class="accordion accordion-flush" id="about-metadata">
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="about-metadata-0">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-metadata-0-collapse" aria-controls="about-metadata-0-collapse">
+        Provenance Information
+      </button>
+    </h2>
+    <div id="about-metadata-0-collapse" class="accordion-collapse collapse" aria-labelledby="about-metadata-0-heading" data-bs-parent="#about-metadata-0">
+      <div class="accordion-body metadata-table">
+      <table id="about-metadata-table-0" class="table table-sm table-striped">
+<tr><td colspan=2>Execution environment</td><td>posix</td></tr>
+<tr><td colspan=2>Input filename</td><td><BIDS root>/sub-001/ses-pilot011/dwi/sub-001_ses-pilot011_acq-lowres_dir-PA_dwi.nii.gz</td></tr>
+<tr><td>Versions</td><td>MRIQC</td><td>24.1.0.dev15+g9586c867.d20240825</td></tr>
+<tr><td>Versions</td><td>NiPype</td><td>1.8.6</td></tr>
+<tr><td>Versions</td><td>TemplateFlow</td><td>24.2.0</td></tr>
+<tr><td colspan=2>md5sum</td><td>db1e82f512d6085613a438cf6fba5e3c</td></tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="about-metadata-1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-metadata-1-collapse" aria-controls="about-metadata-1-collapse">
+        Dataset Information
+      </button>
+    </h2>
+    <div id="about-metadata-1-collapse" class="accordion-collapse collapse" aria-labelledby="about-metadata-1-heading" data-bs-parent="#about-metadata-1">
+      <div class="accordion-body metadata-table">
+      <table id="about-metadata-table-1" class="table table-sm table-striped">
+<tr><td colspan=2>AcquisitionMatrixPE</td><td>120</td></tr>
+<tr><td colspan=2>AcquisitionNumber</td><td>1</td></tr>
+<tr><td colspan=2>AcquisitionTime</td><td>19:13:44.825000</td></tr>
+<tr><td colspan=2>B0FieldSource</td><td>['pilot011pepolarb0', 'pilot011phasediff']</td></tr>
+<tr><td colspan=2>BandwidthPerPixelPhaseEncode</td><td>23.81</td></tr>
+<tr><td colspan=2>BaseResolution</td><td>120</td></tr>
+<tr><td colspan=2>BodyPartExamined</td><td>BRAIN</td></tr>
+<tr><td colspan=2>CoilCombinationMethod</td><td>Adaptive Combine</td></tr>
+<tr><td colspan=2>CoilString</td><td>HeadNeck_64</td></tr>
+<tr><td colspan=2>ConversionSoftware</td><td>dcm2niix</td></tr>
+<tr><td colspan=2>ConversionSoftwareVersion</td><td>v1.0.20220720</td></tr>
+<tr><td colspan=2>Deltas</td><td>[0.0233, 0.0475]</td></tr>
+<tr><td colspan=2>DerivedVendorReportedEchoSpacing</td><td>0.000699986</td></tr>
+<tr><td colspan=2>DeviceSerialNumber</td><td>67014</td></tr>
+<tr><td colspan=2>DiffusionScheme</td><td>Monopolar</td></tr>
+<tr><td colspan=2>DwellTime</td><td>2.4e-06</td></tr>
+<tr><td colspan=2>EchoTime</td><td>0.092</td></tr>
+<tr><td colspan=2>EchoTrainLength</td><td>51</td></tr>
+<tr><td colspan=2>EffectiveEchoSpacing</td><td>0.000349993</td></tr>
+<tr><td colspan=2>FlipAngle</td><td>90</td></tr>
+<tr><td colspan=2>HeudiconvVersion</td><td>1.0.0</td></tr>
+<tr><td colspan=2>ImageOrientationPatientDICOM</td><td>[0.99994, 0.0105628, 0.00297635, -0.00785363, 0.878218, -0.478196]</td></tr>
+<tr><td colspan=2>ImageType</td><td>['ORIGINAL', 'PRIMARY', 'DIFFUSION', 'NONE', 'ND', 'MFSPLIT']</td></tr>
+<tr><td colspan=2>ImageTypeText</td><td>['ORIGINAL', 'PRIMARY', 'DIFFUSION', 'NONE']</td></tr>
+<tr><td colspan=2>ImagingFrequency</td><td>123.248</td></tr>
+<tr><td colspan=2>InPlanePhaseEncodingDirectionDICOM</td><td>COL</td></tr>
+<tr><td colspan=2>InstitutionAddress</td><td>Rue du Bugnon 21,Lausanne,District,CH,1011</td></tr>
+<tr><td colspan=2>InstitutionName</td><td>CHUV</td></tr>
+<tr><td colspan=2>MRAcquisitionType</td><td>2D</td></tr>
+<tr><td colspan=2>MagneticFieldStrength</td><td>3</td></tr>
+<tr><td colspan=2>Manufacturer</td><td>Siemens</td></tr>
+<tr><td colspan=2>ManufacturersModelName</td><td>MAGNETOM Prisma Fit</td></tr>
+<tr><td colspan=2>Modality</td><td>MR</td></tr>
+<tr><td colspan=2>MultibandAccelerationFactor</td><td>3</td></tr>
+<tr><td colspan=2>NonlinearGradientCorrection</td><td>False</td></tr>
+<tr><td colspan=2>ParallelReductionFactorInPlane</td><td>2</td></tr>
+<tr><td colspan=2>PartialFourier</td><td>0.875</td></tr>
+<tr><td colspan=2>PatientPosition</td><td>HFS</td></tr>
+<tr><td colspan=2>PercentPhaseFOV</td><td>100</td></tr>
+<tr><td colspan=2>PercentSampling</td><td>100</td></tr>
+<tr><td colspan=2>PhaseEncodingDirection</td><td>j</td></tr>
+<tr><td colspan=2>PhaseEncodingSteps</td><td>120</td></tr>
+<tr><td colspan=2>PhaseResolution</td><td>1</td></tr>
+<tr><td colspan=2>PixelBandwidth</td><td>1736</td></tr>
+<tr><td colspan=2>ProcedureStepDescription</td><td>RESEARCH Oscar</td></tr>
+<tr><td colspan=2>ProtocolName</td><td>dwi-dwi_acq-lowres_dir-PA__140dir_monopolar</td></tr>
+<tr><td colspan=2>PulseSequenceDetails</td><td>%SiemensSeq%\ep2d_diff</td></tr>
+<tr><td colspan=2>ReceiveCoilActiveElements</td><td>HC1-7;NC1</td></tr>
+<tr><td colspan=2>ReceiveCoilName</td><td>HeadNeck_64</td></tr>
+<tr><td colspan=2>ReconMatrixPE</td><td>120</td></tr>
+<tr><td colspan=2>RefLinesPE</td><td>42</td></tr>
+<tr><td colspan=2>RepetitionTime</td><td>7.8</td></tr>
+<tr><td colspan=2>SAR</td><td>0.118436</td></tr>
+<tr><td colspan=2>ScanOptions</td><td>PFP\FS\PER</td></tr>
+<tr><td colspan=2>ScanningSequence</td><td>GR\EP</td></tr>
+<tr><td colspan=2>SequenceName</td><td>*ep_b0</td></tr>
+<tr><td colspan=2>SequenceVariant</td><td>SK</td></tr>
+<tr><td colspan=2>SeriesDescription</td><td>dwi-dwi_acq-lowres_dir-PA__140dir_monopolar</td></tr>
+<tr><td colspan=2>SeriesNumber</td><td>20</td></tr>
+<tr><td colspan=2>ShimSetting</td><td>[8225, -5625, -6025, 728, -73, -181, 47, 29]</td></tr>
+<tr><td colspan=2>SliceThickness</td><td>2</td></tr>
+<tr><td colspan=2>SliceTiming</td><td>[0, 4.505, 0.1275, 4.6325, 0.2575, 4.7625, 0.385, 4.89, 0.515, 5.02, 0.6425, 5.1475, 0.7725, 5.2775, 0.9, 5.405, 1.03, 5.535, 1.1575, 5.6625, 1.2875, 5.7925, 1.415, 5.92, 1.545, 6.05, 1.6725, 6.1775, 1.8025, 6.3075, 1.93, 6.435, 2.06, 6.5625, 2.1875, 6.6925, 2.3175, 6.82, 2.445, 6.95, 2.5725, 7.0775, 2.7025, 7.2075, 2.83, 7.335, 2.96, 7.465, 3.0875, 7.5925, 3.2175, 7.7225, 3.345, 7.85, 3.475, 7.98, 3.6025, 8.1075, 3.7325, 8.2375, 3.86, 8.365, 3.99, 8.495, 4.1175, 8.6225, 4.2475, 8.7525, 4.375]</td></tr>
+<tr><td colspan=2>SoftwareVersions</td><td>syngo MR XA30</td></tr>
+<tr><td colspan=2>SpacingBetweenSlices</td><td>2</td></tr>
+<tr><td colspan=2>StationName</td><td>LRG10884</td></tr>
+<tr><td colspan=2>TotalReadoutTime</td><td>0.0416492</td></tr>
+<tr><td colspan=2>TxRefAmp</td><td>248.655</td></tr>
+<tr><td colspan=2>VendorReportedEchoSpacing</td><td>0.0007</td></tr>
+<tr><td>dcmmeta</td><td>affine</td><td>[[-1.9998799562454224, -0.015707259997725487, 0.014999999664723873, 116.17816162109375], [-0.02112559974193573, 1.7564359903335571, -0.9563000202178955, -49.90778350830078], [0.005952700041234493, 0.9563919901847839, 1.7569999694824219, -114.13064575195312], [0.0, 0.0, 0.0, 1.0]]</td></tr>
+<tr><td>dcmmeta</td><td>reorient_transform</td><td>[[0.0, -1.0, 0.0, 119.0], [1.0, 0.0, 0.0, 0.0], [0.0, 0.0, -1.0, 68.0], [0.0, 0.0, 0.0, 1.0]]</td></tr>
+<tr><td>dcmmeta</td><td>shape</td><td>[120, 120, 69, 141]</td></tr>
+<tr><td>dcmmeta</td><td>slice_dim</td><td>2</td></tr>
+<tr><td>dcmmeta</td><td>version</td><td>0.6</td></tr>
+<tr><td colspan=2>time</td><td>{'samples': {'AcquisitionNumber': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141], 'ContentTime': ['191353', '191400', '191408', '191416', '191424', '191431', '191439', '191447', '191455', '191503', '191510', '191518', '191526', '191534', '191542', '191549', '191557', '191605', '191613', '191621', '191628', '191636', '191644', '191652', '191700', '191707', '191715', '191723', '191731', '191739', '191746', '191754', '191802', '191810', '191818', '191825', '191833', '191841', '191849', '191857', '191904', '191912', '191920', '191928', '191936', '191943', '191951', '191959', '192007', '192015', '192022', '192030', '192038', '192046', '192054', '192101', '192109', '192117', '192125', '192133', '192140', '192148', '192156', '192204', '192212', '192219', '192227', '192235', '192243', '192251', '192258', '192306', '192314', '192322', '192330', '192337', '192345', '192353', '192401', '192409', '192416', '192424', '192432', '192440', '192448', '192455', '192503', '192511', '192519', '192527', '192534', '192542', '192550', '192558', '192606', '192613', '192621', '192629', '192637', '192645', '192652', '192700', '192708', '192716', '192724', '192731', '192739', '192747', '192755', '192803', '192810', '192818', '192826', '192834', '192842', '192849', '192857', '192905', '192913', '192921', '192928', '192936', '192944', '192952', '193000', '193007', '193015', '193023', '193031', '193039', '193046', '193054', '193102', '193110', '193118', '193125', '193133', '193141', '193149', '193157', '193204'], 'InstanceCreationTime': ['191344.825000', '191352.625000', '191400.425000', '191408.225000', '191416.025000', '191423.825000', '191431.625000', '191439.425000', '191447.225000', '191455.025000', '191502.825000', '191510.625000', '191518.425000', '191526.225000', '191534.025000', '191541.825000', '191549.625000', '191557.425000', '191605.225000', '191613.025000', '191620.825000', '191628.625000', '191636.425000', '191644.225000', '191652.025000', '191659.825000', '191707.625000', '191715.425000', '191723.225000', '191731.025000', '191738.825000', '191746.625000', '191754.425000', '191802.225000', '191810.025000', '191817.825000', '191825.625000', '191833.425000', '191841.225000', '191849.025000', '191856.825000', '191904.625000', '191912.425000', '191920.225000', '191928.025000', '191935.825000', '191943.625000', '191951.425000', '191959.225000', '192007.025000', '192014.825000', '192022.625000', '192030.425000', '192038.225000', '192046.025000', '192053.825000', '192101.625000', '192109.425000', '192117.225000', '192125.025000', '192132.825000', '192140.625000', '192148.425000', '192156.225000', '192204.025000', '192211.825000', '192219.625000', '192227.425000', '192235.225000', '192243.025000', '192250.825000', '192258.625000', '192306.425000', '192314.225000', '192322.025000', '192329.825000', '192337.625000', '192345.425000', '192353.225000', '192401.025000', '192408.825000', '192416.625000', '192424.425000', '192432.225000', '192440.025000', '192447.825000', '192455.625000', '192503.425000', '192511.225000', '192519.025000', '192526.825000', '192534.625000', '192542.425000', '192550.225000', '192558.025000', '192605.825000', '192613.625000', '192621.425000', '192629.225000', '192637.025000', '192644.825000', '192652.625000', '192700.425000', '192708.225000', '192716.025000', '192723.825000', '192731.625000', '192739.425000', '192747.225000', '192755.025000', '192802.825000', '192810.625000', '192818.425000', '192826.225000', '192834.025000', '192841.825000', '192849.625000', '192857.425000', '192905.225000', '192913.025000', '192920.825000', '192928.625000', '192936.425000', '192944.225000', '192952.025000', '192959.825000', '193007.625000', '193015.425000', '193023.225000', '193031.025000', '193038.825000', '193046.625000', '193054.425000', '193102.225000', '193110.025000', '193117.825000', '193125.625000', '193133.425000', '193141.225000', '193149.025000', '193156.825000'], 'LargestImagePixelValue': [4095, 377, 393, 447, 550, 555, 1388, 395, 633, 1073, 1018, 541, 393, 376, 980, 1088, 404, 414, 380, 390, 552, 415, 536, 559, 416, 557, 633, 551, 1192, 415, 420, 397, 403, 417, 385, 553, 425, 610, 630, 550, 400, 551, 374, 547, 1079, 394, 603, 4095, 368, 1089, 382, 381, 566, 535, 1222, 356, 385, 549, 416, 1239, 364, 513, 588, 366, 497, 558, 326, 534, 391, 381, 604, 457, 532, 384, 1008, 946, 414, 998, 567, 1669, 562, 1062, 544, 342, 431, 1524, 439, 604, 396, 1002, 482, 561, 1145, 630, 4095, 390, 977, 1136, 479, 420, 446, 1017, 405, 551, 556, 572, 388, 473, 529, 599, 403, 1286, 408, 412, 511, 1009, 528, 412, 389, 370, 626, 382, 392, 388, 1115, 391, 610, 1055, 529, 558, 533, 415, 391, 385, 1087, 444, 405, 456, 373, 430, 4095], 'SequenceName': ['*ep_b0', '*ep_b3000#1', '*ep_b3000#2', '*ep_b3000#3', '*ep_b2000#4', '*ep_b2000#5', '*ep_b700#6', '*ep_b3000#7', '*ep_b2000#8', '*ep_b1000#9', '*ep_b1000#10', '*ep_b2000#11', '*ep_b3000#12', '*ep_b3000#13', '*ep_b1000#14', '*ep_b1000#15', '*ep_b3000#16', '*ep_b3000#17', '*ep_b3000#18', '*ep_b3000#19', '*ep_b2000#20', '*ep_b3000#21', '*ep_b2000#22', '*ep_b2000#23', '*ep_b3000#24', '*ep_b2000#25', '*ep_b2000#26', '*ep_b2000#27', '*ep_b1000#28', '*ep_b3000#29', '*ep_b3000#30', '*ep_b3000#31', '*ep_b3000#32', '*ep_b3000#33', '*ep_b3000#34', '*ep_b2000#35', '*ep_b3000#36', '*ep_b2000#37', '*ep_b2000#38', '*ep_b2000#39', '*ep_b3000#40', '*ep_b2000#41', '*ep_b3000#42', '*ep_b2000#43', '*ep_b1000#44', '*ep_b3000#45', '*ep_b2000#46', '*ep_b0', '*ep_b3000#48', '*ep_b1000#49', '*ep_b3000#50', '*ep_b3000#51', '*ep_b2000#52', '*ep_b2000#53', '*ep_b700#54', '*ep_b3000#55', '*ep_b3000#56', '*ep_b2000#57', '*ep_b3000#58', '*ep_b700#59', '*ep_b3000#60', '*ep_b2000#61', '*ep_b2000#62', '*ep_b3000#63', '*ep_b2000#64', '*ep_b2000#65', '*ep_b3000#66', '*ep_b2000#67', '*ep_b3000#68', '*ep_b3000#69', '*ep_b2000#70', '*ep_b3000#71', '*ep_b2000#72', '*ep_b3000#73', '*ep_b1000#74', '*ep_b1000#75', '*ep_b3000#76', '*ep_b1000#77', '*ep_b2000#78', '*ep_b700#79', '*ep_b2000#80', '*ep_b1000#81', '*ep_b2000#82', '*ep_b3000#83', '*ep_b3000#84', '*ep_b700#85', '*ep_b3000#86', '*ep_b2000#87', '*ep_b3000#88', '*ep_b1000#89', '*ep_b3000#90', '*ep_b2000#91', '*ep_b1000#92', '*ep_b2000#93', '*ep_b0', '*ep_b3000#95', '*ep_b1000#96', '*ep_b1000#97', '*ep_b3000#98', '*ep_b3000#99', '*ep_b3000#100', '*ep_b1000#101', '*ep_b3000#102', '*ep_b2000#103', '*ep_b2000#104', '*ep_b2000#105', '*ep_b3000#106', '*ep_b3000#107', '*ep_b2000#108', '*ep_b2000#109', '*ep_b3000#110', '*ep_b700#111', '*ep_b3000#112', '*ep_b3000#113', '*ep_b2000#114', '*ep_b1000#115', '*ep_b2000#116', '*ep_b3000#117', '*ep_b3000#118', '*ep_b3000#119', '*ep_b2000#120', '*ep_b3000#121', '*ep_b3000#122', '*ep_b3000#123', '*ep_b1000#124', '*ep_b3000#125', '*ep_b2000#126', '*ep_b1000#127', '*ep_b2000#128', '*ep_b2000#129', '*ep_b2000#130', '*ep_b3000#131', '*ep_b3000#132', '*ep_b3000#133', '*ep_b1000#134', '*ep_b3000#135', '*ep_b3000#136', '*ep_b3000#137', '*ep_b3000#138', '*ep_b3000#139', '*ep_b0']}, 'slices': {'ImagePositionPatient': [[-114.287, -159.107, -0.285789], [-114.302, -158.151, 1.47071], [-114.317, -157.195, 3.2272], [-114.333, -156.238, 4.9837], [-114.348, -155.282, 6.74019], [-114.363, -154.326, 8.49669], [-114.379, -153.37, 10.2532], [-114.394, -152.413, 12.0097], [-114.409, -151.457, 13.7662], [-114.425, -150.501, 15.5227], [-114.44, -149.544, 17.2792], [-114.455, -148.588, 19.0357], [-114.471, -147.632, 20.7922], [-114.486, -146.676, 22.5487], [-114.501, -145.719, 24.3052], [-114.517, -144.763, 26.0616], [-114.532, -143.807, 27.8181], [-114.547, -142.85, 29.5746], [-114.563, -141.894, 31.3311], [-114.578, -140.938, 33.0876], [-114.593, -139.982, 34.8441], [-114.609, -139.025, 36.6006], [-114.624, -138.069, 38.3571], [-114.639, -137.113, 40.1136], [-114.655, -136.156, 41.8701], [-114.67, -135.2, 43.6266], [-114.685, -134.244, 45.3831], [-114.701, -133.288, 47.1396], [-114.716, -132.331, 48.8961], [-114.731, -131.375, 50.6526], [-114.747, -130.419, 52.4091], [-114.762, -129.462, 54.1656], [-114.777, -128.506, 55.9221], [-114.793, -127.55, 57.6786], [-114.808, -126.593, 59.4351], [-114.823, -125.637, 61.1916], [-114.839, -124.681, 62.9481], [-114.854, -123.725, 64.7046], [-114.869, -122.768, 66.4611], [-114.885, -121.812, 68.2176], [-114.9, -120.856, 69.974], [-114.915, -119.899, 71.7305], [-114.93, -118.943, 73.487], [-114.946, -117.987, 75.2435], [-114.961, -117.031, 77.0], [-114.976, -116.074, 78.7565], [-114.992, -115.118, 80.513], [-115.007, -114.162, 82.2695], [-115.022, -113.205, 84.026], [-115.038, -112.249, 85.7825], [-115.053, -111.293, 87.539], [-115.068, -110.337, 89.2955], [-115.084, -109.38, 91.052], [-115.099, -108.424, 92.8085], [-115.114, -107.468, 94.565], [-115.13, -106.511, 96.3215], [-115.145, -105.555, 98.078], [-115.16, -104.599, 99.8345], [-115.176, -103.643, 101.591], [-115.191, -102.686, 103.347], [-115.206, -101.73, 105.104], [-115.222, -100.774, 106.86], [-115.237, -99.8174, 108.617], [-115.252, -98.8611, 110.373], [-115.268, -97.9048, 112.13], [-115.283, -96.9486, 113.886], [-115.298, -95.9923, 115.643], [-115.314, -95.036, 117.399], [-115.329, -94.0797, 119.156]], 'SliceLocation': [-75.4512, -73.4512, -71.4512, -69.4512, -67.4512, -65.4512, -63.4512, -61.4512, -59.4512, -57.4512, -55.4512, -53.4512, -51.4512, -49.4512, -47.4512, -45.4512, -43.4512, -41.4512, -39.4512, -37.4512, -35.4512, -33.4512, -31.4512, -29.4512, -27.4512, -25.4512, -23.4512, -21.4512, -19.4512, -17.4512, -15.4512, -13.4512, -11.4512, -9.45118, -7.45118, -5.45118, -3.45118, -1.45118, 0.548818, 2.54882, 4.54882, 6.54882, 8.54882, 10.5488, 12.5488, 14.5488, 16.5488, 18.5488, 20.5488, 22.5488, 24.5488, 26.5488, 28.5488, 30.5488, 32.5488, 34.5488, 36.5488, 38.5488, 40.5488, 42.5488, 44.5488, 46.5488, 48.5488, 50.5488, 52.5488, 54.5488, 56.5488, 58.5488, 60.5488]}}</td></tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="about-metadata-2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#about-metadata-2-collapse" aria-controls="about-metadata-2-collapse">
+        Extracted Image quality metrics (IQMs)
+      </button>
+    </h2>
+    <div id="about-metadata-2-collapse" class="accordion-collapse collapse" aria-labelledby="about-metadata-2-heading" data-bs-parent="#about-metadata-2">
+      <div class="accordion-body metadata-table">
+      <table id="about-metadata-table-2" class="table table-sm table-striped">
+<tr><td colspan=4>NumberOfShells</td><td>4</td></tr>
+<tr><td colspan=4>bValues</td><td>[0.0, 700.0, 1000.0, 2000.0, 3000.0]</td></tr>
+<tr><td colspan=4>bValuesEstimation</td><td>[700.0, 1000.0, 2000.0, 3000.0]</td></tr>
+<tr><td>bdiffs</td><td colspan=3>max</td><td>0.1562</td></tr>
+<tr><td>bdiffs</td><td colspan=3>mean</td><td>0.0637</td></tr>
+<tr><td>bdiffs</td><td colspan=3>median</td><td>0.0712</td></tr>
+<tr><td>bdiffs</td><td colspan=3>min</td><td>0.0033</td></tr>
+<tr><td>efc</td><td colspan=3>shell01</td><td>0.3849</td></tr>
+<tr><td>efc</td><td colspan=3>shell02</td><td>0.4535</td></tr>
+<tr><td>efc</td><td colspan=3>shell03</td><td>0.4639</td></tr>
+<tr><td>efc</td><td colspan=3>shell04</td><td>0.5015</td></tr>
+<tr><td>efc</td><td colspan=3>shell05</td><td>0.5445</td></tr>
+<tr><td>fa</td><td colspan=3>degenerate</td><td>0.0</td></tr>
+<tr><td>fa</td><td colspan=3>nans</td><td>0.0</td></tr>
+<tr><td>fber</td><td colspan=3>shell01</td><td>3494.5906</td></tr>
+<tr><td>fber</td><td colspan=3>shell02</td><td>1300.6104</td></tr>
+<tr><td>fber</td><td colspan=3>shell03</td><td>851.8871</td></tr>
+<tr><td>fber</td><td colspan=3>shell04</td><td>276.7153</td></tr>
+<tr><td>fber</td><td colspan=3>shell05</td><td>118.3567</td></tr>
+<tr><td>fd</td><td colspan=3>mean</td><td>6.0259</td></tr>
+<tr><td>fd</td><td colspan=3>num</td><td>140</td></tr>
+<tr><td>fd</td><td colspan=3>perc</td><td>99.29078014184397</td></tr>
+<tr><td colspan=4>ndc</td><td>0.5976</td></tr>
+<tr><td>sigma</td><td colspan=3>cc</td><td>29.652</td></tr>
+<tr><td>sigma</td><td colspan=3>pca</td><td>9.7878</td></tr>
+<tr><td>sigma</td><td colspan=3>piesno</td><td>0.9905</td></tr>
+<tr><td>snr</td><td>cc</td><td colspan=2>shell0</td><td>5.85</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell1</td><td>best</td><td>5.88</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell1</td><td>worst</td><td>5.88</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell2</td><td>best</td><td>4.02</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell2</td><td>worst</td><td>3.48</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell3</td><td>best</td><td>3.35</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell3</td><td>worst</td><td>2.0</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell4</td><td>best</td><td>2.09</td></tr>
+<tr><td>snr</td><td>cc</td><td>shell4</td><td>worst</td><td>1.3</td></tr>
+<tr><td>spikes</td><td colspan=3>global</td><td>62.26</td></tr>
+<tr><td>spikes</td><td>slice</td><td colspan=2>i</td><td>308.36</td></tr>
+<tr><td>spikes</td><td>slice</td><td colspan=2>j</td><td>221.85</td></tr>
+<tr><td>spikes</td><td>slice</td><td colspan=2>k</td><td>394.01</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>k</td><td>756.0784</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>mad</td><td>5.9304</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>mean</td><td>26.5161</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>median</td><td>6.0</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>n</td><td>806232.0</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>p05</td><td>1.0</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>p95</td><td>119.0</td></tr>
+<tr><td>summary</td><td>bg</td><td colspan=2>stdv</td><td>101.8228</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>k</td><td>6.2115</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>mad</td><td>186.8079</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>mean</td><td>424.4828</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>median</td><td>334.0</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>n</td><td>187368.0</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>p05</td><td>104.0</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>p95</td><td>1066.0</td></tr>
+<tr><td>summary</td><td>fg</td><td colspan=2>stdv</td><td>314.4163</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>k</td><td>21.492</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>mad</td><td>81.5431</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>mean</td><td>245.6951</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>median</td><td>239.0</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>n</td><td>52947.0</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>p05</td><td>98.0</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>p95</td><td>412.0</td></tr>
+<tr><td>summary</td><td>wm</td><td colspan=2>stdv</td><td>110.2503</td></tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+        </div>
+    </div>
+
+<div id="qcrating-menu" class="card position-fixed d-none" style="width: 30%; top: 100px; left: 65%; max-height: 85%; overflow-y: auto;">
+<div class="card-header m-0">
+    Rating widget
+    <button type="button" class="btn-close position-absolute top-0 end-0" aria-label="Close" id="close-qcrating-menu" onclick="toggle_rating()" style="margin: 10px 10px 0 0"></button>
+</div>
+<div class="card-body">
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="qcslider-head">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#qcslider-collapse" aria-expanded="true" aria-controls="qcslider-collapse">Overall Quality Rating</button>
+    </h2>
+    <div id="qcslider-collapse" class="accordion-collapse collapse show" aria-labelledby="qcslider-head">
+      <div class="accordion-body">
+        <input type="range" min="1.0" max="4.0" step="0.05" value="2.5" id="qcslider" class="slider">
+        <ul class="list-group list-group-horizontal slider-labels" style="width: 100%">
+            <li class="list-group-item list-group-item-danger small" style="font-size: 0.7em; width: 25%; text-align:center">Exclude</li>
+            <li class="list-group-item list-group-item-warning small" style="font-size: 0.7em; width: 25%; text-align:center">Poor</li>
+            <li class="list-group-item list-group-item-primary small" style="font-size: 0.7em; width: 25%; text-align:center">Acceptable</li>
+            <li class="list-group-item list-group-item-success small" style="font-size: 0.7em; width: 25%; text-align:center">Excellent</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="qcartifacts-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qcartifacts-collapse" aria-expanded="false" aria-controls="qcartifacts-collapse">
+        Record specific artifacts
+      </button>
+    </h2>
+    <div id="qcartifacts-collapse" class="accordion-collapse collapse" aria-labelledby="qcartifacts-head">
+      <div class="accordion-body">
+        <fieldset id="qcartifacts-group" class="form-group">
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="head-motion" id="qcartifacts-item-0" />
+                <label class="form-check-label" for="qcartifacts-item-0">Head motion artifacts</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="eye-spillover" id="qcartifacts-item-1" />
+                <label class="form-check-label" for="qcartifacts-item-1">Eye spillover through <abbr title="phase-encoding">PE</abbr> axis</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="noneye-spillover" id="qcartifacts-item-2" />
+                <label class="form-check-label" for="qcartifacts-item-2">Non-eye spillover through <abbr title="phase-encoding">PE</abbr> axis</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="coil-failure" id="qcartifacts-item-3" />
+                <label class="form-check-label" for="qcartifacts-item-3">Coil failure</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="noise-global" id="qcartifacts-item-4" />
+                <label class="form-check-label" for="qcartifacts-item-4">Global noise</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="noise-local" id="qcartifacts-item-5" />
+                <label class="form-check-label" for="qcartifacts-item-5">Local noise</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="em-perturbation" id="qcartifacts-item-6" />
+                <label class="form-check-label" for="qcartifacts-item-6"><abbr title="electromagnetic">EM</abbr> interference/perturbation</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="wrap-around" id="qcartifacts-item-7" />
+                <label class="form-check-label" for="qcartifacts-item-7">Problematic <abbr title="field-of-view">FoV</abbr> prescription / wrap-around</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="ghost-aliasing" id="qcartifacts-item-8" />
+                <label class="form-check-label" for="qcartifacts-item-8">Aliasing ghosts</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="ghost-other" id="qcartifacts-item-9" />
+                <label class="form-check-label" for="qcartifacts-item-9">Other ghosts (for example, <abbr title="radiofrequency">RF</abbr> spoiling)</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="inu" id="qcartifacts-item-10" />
+                <label class="form-check-label" for="qcartifacts-item-10">Intensity non-uniformity (B<sub>1</sub> bias)</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="field-variation" id="qcartifacts-item-11" />
+                <label class="form-check-label" for="qcartifacts-item-11">Temporal B<sub>1</sub> field non-uniformity variation</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="processing" id="qcartifacts-item-12" />
+                <label class="form-check-label" for="qcartifacts-item-12">Processing such as denoising, defacing or resamplings happened</label>
+            </div>
+            <div class="form-check form-switch small">
+                <input class="form-check-input" type="checkbox" name="uncategorized" id="qcartifacts-item-13" />
+                <label class="form-check-label" for="qcartifacts-item-13">Other uncategorized artifact(s)</label>
+            </div>
+        </fieldset>
+      </div> <!-- accordion-body -->
+    </div> <!-- accordion-collapse -->
+  </div> <!-- accordion-item -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="qcextra-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qcextra-collapse" aria-expanded="false" aria-controls="qcextra-collapse">
+        Extra details
+      </button>
+    </h2>
+    <div id="qcextra-collapse" class="accordion-collapse collapse" aria-labelledby="qcextra-head">
+      <div class="accordion-body">
+        <div class="input-group">
+          <span class="input-group-text">Comments</span>
+          <textarea class="form-control" aria-label="Comments" id="qcextra-comments"></textarea>
+        </div>
+
+        <p style="margin-top: 20px; font-weight: bold">Rater confidence</p>
+        <input type="range" min="0.0" max="4.0" step="0.05" value="3.5" id="qcextra-confidence" class="slider" style="margin-left: 22%;width: 56%;">
+        <ul class="list-group list-group-horizontal slider-labels" style="width: 100%">
+            <li class="list-group-item list-group-item-warning small" style="width: 50%; text-align:center">Doubtful</li>
+            <li class="list-group-item list-group-item-success bg-success text-white small" style="width: 50%; text-align:center">Confident</li>
+        </ul>
+       </div> <!-- accordion-body -->
+    </div> <!-- accordion-collapse -->
+  </div> <!-- accordion-item -->
+</div>
+<div style="margin-top: 10px">
+<a class="btn btn-primary disabled" id="btn-download" href="">Download</a>
+</div>
+<script type="text/javascript">
+var MINIMUM_RATING_TIME = 10
+$('#qcslider').on('input', function() {
+
+    if ( (Date.now() - timestamp) / 1000 > MINIMUM_RATING_TIME) {
+        $('#btn-download').removeClass('disabled');
+        $('#btn-download').removeAttr('aria-disabled');
+        $('#btn-post').removeAttr('disabled');
+    };
+
+    $('#qcslider-collapse .list-group-item').removeClass(function(index, classname) {
+        return (classname.match(/(^|\s)bg-\S+/g) || []).join(' ');
+    });
+    $('#qcslider-collapse .list-group-item').removeClass(function(index, classname) {
+        return (classname.match(/(^|\s)text-\S+/g) || []).join(' ');
+    });
+
+    if ( $(this).val() < 1.5 ) {
+        $('#qcslider-collapse .list-group-item-danger').addClass('bg-danger text-white');
+    } else if ( $(this).val() > 3.5 ) {
+        $('#qcslider-collapse .list-group-item-success').addClass('bg-success text-white');
+    } else if ( $(this).val() < 2.5 ) {
+        $('#qcslider-collapse .list-group-item-warning').addClass('bg-warning text-dark');
+    } else {
+        $('#qcslider-collapse .list-group-item-primary').addClass('bg-primary text-white');
+    };
+
+    var payload = read_form();
+});
+
+$('#qcextra-confidence').on('input', function() {
+    if ( (Date.now() - timestamp) / 1000 > MINIMUM_RATING_TIME) {
+        $('#btn-download').removeClass('disabled');
+        $('#btn-download').removeAttr('aria-disabled');
+        $('#btn-post').removeAttr('disabled');
+    };
+
+    $('#qcextra-collapse .list-group-item').removeClass(function(index, classname) {
+        return (classname.match(/(^|\s)bg-\S+/g) || []).join(' ');
+    });
+    $('#qcextra-collapse .list-group-item').removeClass(function(index, classname) {
+        return (classname.match(/(^|\s)text-\S+/g) || []).join(' ');
+    });
+
+    if ( $(this).val() < 2.0 ) {
+        $('#qcextra-collapse .list-group-item-warning').addClass('bg-warning text-dark');
+    } else {
+        $('#qcextra-collapse .list-group-item-success').addClass('bg-success text-white');
+    };
+
+    var payload = read_form();
+});
+
+
+$('#qcextra-comments').bind('input propertychange', function() {
+    if ( (Date.now() - timestamp) / 1000 > MINIMUM_RATING_TIME) {
+        $('#btn-download').removeClass('disabled');
+        $('#btn-download').removeAttr('aria-disabled');
+        $('#btn-post').removeAttr('disabled');
+    };
+});
+
+$( '#btn-post' ).click( function() {
+    var payload = read_form();
+    var md5sum = "unspecified";
+    var params = {
+        'rating': payload['rating'],
+        'md5sum': md5sum,
+        'name': "",
+        'comment': JSON.stringify(payload['artifacts'])
+    };
+
+    // disable development releases
+    var authorization = $(this).val();
+    var ratingReq = new XMLHttpRequest();
+    ratingReq.open("POST", "https://mriqc.nimh.nih.gov:443/api/v1/rating");
+    ratingReq.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    ratingReq.setRequestHeader("Authorization", authorization);
+    ratingReq.onload = function () {
+        status = ratingReq.status;
+        $('#btn-post').removeClass('btn-primary');
+        $('#btn-post').attr('disabled', true);
+        $('#btn-post').attr('aria-disabled', true);
+        $('#btn-post').prop('disabled');
+        $('#btn-post').addClass('disabled');
+        $('#btn-post').removeClass('active');
+        if (status === "201") {
+            $('#btn-post').addClass('btn-success');
+            $('#btn-post').html('Posted!');
+        } else {
+            $('#btn-post').addClass('btn-danger');
+            $('#btn-post').html('Failed');
+        };
+    };
+    ratingReq.send(JSON.stringify(params));
+});
+
+$( 'body' ).on( 'click', '#qcartifacts-group input', function(e) {
+    if ( (Date.now() - timestamp) / 1000 > MINIMUM_RATING_TIME) {
+        $('#btn-download').removeClass('disabled');
+        $('#btn-download').removeAttr('aria-disabled');
+        $('#btn-post').removeAttr('disabled');
+    };
+    
+    var payload = read_form();
+});
+
+$( 'body' ).on( 'click', '#qcrating-toggler', function(e) {
+    toggle_rating();
+});
+</script>
+</div>
+
+<script type="text/javascript">
+function toggle(id) {
+    var element = document.getElementById(id);
+    if(element.style.display == 'block')
+        element.style.display = 'none';
+    else
+        element.style.display = 'block';
+}
+</script>
+</body>
+</html>
