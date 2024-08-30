@@ -29,9 +29,23 @@ datalad save -m "add: $SESSION"
 datalad push --to=ria-storage
 datalad push --to=origin
 
+# Prepare PR's body
+body_file=$( mktemp )
+echo "Automatically generated PR with MRIQC results for session $SESSION" > $body_file
+echo '' >> $body_file
+echo "Generated reports:" >> $body_file
+echo '' >> $body_file
+echo '```TSV' >> $body_file
+ls sub-001_ses-${SESSION}_*.html >> $body_file
+echo '```' >> $body_file
+
+# Retrieve original issue number:
+$gh_issue= $( gh search issues --match title --repo TheAxonLab/hcph-dataset --json number --jq .[0].number  -- is:open label:scan $SESSION )
+if [ ! -z "$gh_issue" ]; then
+    echo '' >> $body_file
+    echo "Prompted-by: TheAxonLab/hcph-dataset#${gh_issue}." >> $body_file
+fi
+
 # Send PR
-gh pr create -B "master" -r "celprov" -a "@me" -t "ADD: MRIQC for $SESSION" -b "Automatically generated PR with MRIQC results for session $SESSION"
-
-
-
+gh pr create -B "master" -r "celprov" -a "@me" -t "ADD: MRIQC for $SESSION" -F $body_file
 
