@@ -40,7 +40,7 @@ ls sub-001_ses-${SESSION}_*.html >> $body_file
 echo '```' >> $body_file
 
 # Retrieve original issue number:
-$gh_issue= $( gh search issues --match title --repo TheAxonLab/hcph-dataset --json number --jq .[0].number  -- is:open label:scan $SESSION )
+gh_issue=$( gh search issues --match title --repo TheAxonLab/hcph-dataset --json number --jq .[0].number  -- is:open label:scan $SESSION )
 if [ ! -z "$gh_issue" ]; then
     echo '' >> $body_file
     echo "Prompted-by: TheAxonLab/hcph-dataset#${gh_issue}." >> $body_file
