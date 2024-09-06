@@ -13,10 +13,20 @@ mkdir -p $WORKDIR
 FILTER_FILE=${WORKDIR}/filter-$SESSION.json
 sed -e "s/sesid/$SESSION/g" code/filters-tpl.json > $FILTER_FILE
 
+# Update dataset & PyBIDS database
+pushd $DATASET_PATH
+git checkout master
+datalad update --how ff-only
+datalad get .bids-index/layout_index.sqlite
+popd
+
 # Git/datalad
+pushd $OUTPUT_PATH
 git checkout master
 datalad update --how ff-only
 git checkout -b add/ses-${SESSION}
+popd
+
 
 # Prepare execution
 pushd $WORKDIR
