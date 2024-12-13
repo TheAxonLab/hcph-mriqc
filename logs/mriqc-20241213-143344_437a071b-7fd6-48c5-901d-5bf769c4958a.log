@@ -1,0 +1,47 @@
+------------------------------------------------------------------
+  Running MRIQC version 24.1.0.dev15+g9586c867.d20240825
+  ----------------------------------------------------------------
+
+  NOTICE
+  Copyright © The NiPreps Developers.
+  
+  This product includes software developed by
+  the NiPreps Community (https://nipreps.org/).
+  
+  Portions of this software were developed at the Department of
+  Psychology at Stanford University, Stanford, CA, US.
+  
+  This software contains code ultimately derived from the
+  PCP Quality Assessment Protocol (QAP;
+  http://preprocessed-connectomes-project.org/quality-assessment-protocol)
+  by C. Craddock, S. Giavasis, D. Clark, Z. Shezhad, and J. Pellman.
+  
+  This software is also distributed as a Docker container image.
+  The bootstrapping file for the image ("Dockerfile") is licensed
+  under the MIT License.
+
+  ----------------------------------------------------------------
+
+  * BIDS dataset path: /data/datasets/hcph.
+  * Output folder: ..
+  * Analysis levels: ['group'].
+------------------------------------------------------------------
+
+2024-12-13 14:35:18 | IMPORTANT | mriqc            | DataLad dataset identified, attempting to `datalad get` unavailable files.
+2024-12-13 14:35:20 | IMPORTANT | mriqc            | Extracting metadata and entities for 124 input runs of modality 't1w'...
+2024-12-13 14:35:26 | IMPORTANT | mriqc            | File size ('t1w'): 0.02|0.01 GB [maximum|average].
+2024-12-13 14:35:26 | IMPORTANT | mriqc            | Extracting metadata and entities for 161 input runs of modality 't2w'...
+2024-12-13 14:35:32 | IMPORTANT | mriqc            | File size ('t2w'): 0.02|0.02 GB [maximum|average].
+2024-12-13 14:35:32 | IMPORTANT | mriqc            | Extracting metadata and entities for 183 input runs of modality 'bold'...
+2024-12-13 14:36:10 | IMPORTANT | mriqc            | File size ('bold'): 1.91|0.85 GB [maximum|average].
+2024-12-13 14:36:10 | IMPORTANT | mriqc            | Extracting metadata and entities for 117 input runs of modality 'dwi'...
+2024-12-13 14:36:17 | WARNING  | nipype.workflow  | 6 cannot be processed (too short or too long)
+2024-12-13 14:36:17 | IMPORTANT | mriqc            | File size ('dwi'): 0.45|0.33 GB [maximum|average].
+------------------------------------------------------------------
+Generating group reports
+------------------------------------------------------------------
+
+----------------------------------------------------------------
+  MRIQC completed (elapsed time 00h 02min 40s).
+----------------------------------------------------------------
+
