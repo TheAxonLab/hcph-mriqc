@@ -1,0 +1,33 @@
+{
+    "abbreviations":
+        {
+        "avg": "average",
+        "bg": "background",
+        "BOLD": "blood oxygen level dependent",
+        "FD": "framewise displacement",
+        "HM": "head motion",
+        "INU": "intensity non-uniformity",
+        "PE": "phase encoding",
+        "SD": "susceptibility distortion",
+        "SNR": "signal-to-noise ratio",
+        "std": "standard deviation",
+        "WS": "multi-band-related square visible in sagittal plane of standard deviation mosaic."
+        },
+    "general_qc_comments":
+        [
+            "PE direction LR and RL induces more distortion in frontal lobe (ie. skull shape is deformed) than AP or PA.",
+            "PE direction LR and RL induces aliasing ghost visible in the background of the average BOLD images.",
+            "The multi-band-related square in the sagittal plane is more prominent with PE direction LR and RL.",
+            "SNR seems in general lower in LR and RL PE direction.",
+            "PA PE direction often presents a wrap-around of the eyes inducing spurious high std close to the occipital lobe.",
+            "With AP PE direction, an aliasing ghost is often visible inside the cortical matter on echo 1.",
+            "Aliasing ghosts are more prominent on echo 1 and 2.",
+            "Echo 3 and 4 are more prone to susceptibility distortion than Echo 1 and 2.",
+            "Echo 3 and 4 are more sensitive to head motion such that deflections in carpetplot are more pronounced.",
+            "Head-motion-related ringing tend to be more visible on echo 1 and 2.",
+            "Echo 1 is more prone to the multi-band-related square in the sagittal plane of the standard deviation mosaic.",
+            "For the breath holding task, the FD timeserie reflects breathing blocks and light/dark alternation are visible in the carpetplot.",
+            "It was difficult to discern head-motion related ringing from the noise present on all images (especially in echo 1).",
+            "All scans present susceptibility distortion and aliasing ghost."
+        ]
+}

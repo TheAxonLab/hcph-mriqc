@@ -1,0 +1,85 @@
+rater_id	dataset	input_file	rating	artifacts	time_sec	confidence	comments
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl027_acq-undistorted_T1w	3.55	eye-spillover, noise-local	209.948	2.5	local noise close to the ventricles
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl029_acq-undistorted_T1w	3.45	eye-spillover, inu	113.066	3.5	light INU
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.2	ghost-aliasing	84.348	4.0	low resolution
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.85	eye-spillover, ghost-aliasing	42.385	4.0	low resolution
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot002_acq-morphobox_T1w	1.75	head-motion, ghost-aliasing	90.988	3.5	ghost and head motion visible in the background but not in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot003_acq-morphobox_T1w	1.75	eye-spillover, noneye-spillover, ghost-aliasing	96.921	3.5	artifacts detected visible only in the bg
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot004_acq-morphobox_T1w	1.9	eye-spillover, ghost-aliasing	72.793	3.25	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-undistorted_T1w	1.45	eye-spillover, noise-global, ghost-aliasing	131.688	2.75	low contrast, eye spillover visible on T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-original_T1w	1.45		79.232	2.45	eye spillover overlaps with GM in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot008_acq-original_T1w	2.75	eye-spillover, noise-global, ghost-aliasing	105.792	3.4	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot008_acq-undistorted_T1w	2.95	head-motion, noise-global	136.692	3.15	light headmotion (HM) ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot009_acq-original_T1w	1.3	eye-spillover, ghost-aliasing	56.008	3.5	eye spillover overlaps with GM in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot009_acq-undistorted_T1w	2.65	eye-spillover, ghost-aliasing	70.745	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot010_acq-original_T1w	1.25	eye-spillover, ghost-aliasing	143.274	3.65	Eye spillover like artifact on lower occiptal lobe, ESP overlaps with GM in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot010_acq-undistorted_T1w	1.45	eye-spillover, ghost-aliasing	79.268	3.65	Eye spillover like artifact in lower occipital lobe, 
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_acq-original_T1w	1.4	eye-spillover, noneye-spillover, noise-global	229.136	1.85	ESP overlap GM in T1w, ESP like artifact in occipital lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_acq-undistorted_T1w	1.55	eye-spillover, noneye-spillover	168.172	0.4	slice 82-83 heat motion ringing visible, occipital ESP-like visible
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_acq-undistorted_T1w	1.9	eye-spillover, ghost-aliasing	103.997	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_acq-original_T1w	1.45	eye-spillover, noneye-spillover, ghost-aliasing, uncategorized	172.492	1.4	ESP overlaps GM in T1w, ESP-like in occipital lobe visible
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-undistorted_T1w	2.0	eye-spillover, noise-local, ghost-aliasing	171.071	2.7	noisy close to the ventricles
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-original_T1w	2.0	eye-spillover, ghost-aliasing	162.818	2.4	ESP overlaps GM 
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_acq-original_T1w	1.7	head-motion, eye-spillover, ghost-aliasing	293.94	3.5	bad artfact in the bg, ESP overlaps GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_acq-undistorted_T1w	2.1	head-motion, eye-spillover	204.442	3.5	bad artifact in bg, ESP overlaps with GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_acq-original_T1w	2.6	eye-spillover	149.213	3.2	ESP on slice 94 (only left) on not on other T1w slice
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_acq-undistorted_T1w	2.65	eye-spillover, ghost-aliasing	83.156	3.25	ESP only left slice 94, rest not so much
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_acq-undistorted_T1w	1.6	head-motion, eye-spillover, ghost-aliasing, uncategorized	180.636	3.8	artifact in the bg, head motion ripples visible on T1w, ESP overlaps GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_acq-original_T1w	1.55	eye-spillover, uncategorized	89.93	3.5	artifact in bg, HM ripple visible in GM, ES overlaps GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-1_T1w	1.0		92.458	4.0	looks like two images are overlapped
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-1_T1w	1.0		24.517	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-2_T1w	1.0		31.326	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-2_T1w	1.0		11.97	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-3_T1w	1.0		30.188	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-3_T1w	1.0		20.077	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-4_T1w	2.65	wrap-around	264.05	3.2	narrow FOV, wrap-around nose visible but does not overlap with GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-4_T1w	2.7	wrap-around	91.314	3.5	narrow FOV, nose wrap-around visible but does not overlap with GM, no ESP visible for once
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-1_T1w	1.0		36.681	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-2_T1w	1.0		20.556	4.0	Looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_acq-original_T1w	2.05	eye-spillover, ghost-aliasing	119.72	3.5	ESP overlaps GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_acq-undistorted_T1w	1.75	eye-spillover, ghost-aliasing	90.413	3.6	artifact in bg, ESP overlaps GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot020_acq-original_T1w	2.6	eye-spillover, ghost-aliasing	81.176	3.5	ESP overlaps GM a bit
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot020_acq-undistorted_T1w	2.7	eye-spillover, ghost-aliasing	68.963	3.5	ESP overlaps GM lightly
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot021_acq-undistorted_T1w	3.45	eye-spillover, noise-global	166.989	3.4	ESP perpendicular to the brain :), slight ringing visible
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-001_acq-undistorted_T1w	2.4	head-motion	112.343	3.5	HM ringing visible in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-003_acq-undistorted_T1w	3.35	eye-spillover	270.142	3.5	ESP perpendicular
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-004_acq-undistorted_T1w	2.45	head-motion, eye-spillover	136.768	3.35	HM ringing visible on T1w in lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-005_acq-undistorted_T1w	3.7	eye-spillover	97.763	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-006_acq-undistorted_T1w	2.5	head-motion, eye-spillover	119.494	3.4	HM ringing visble on T1w in lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-007_acq-undistorted_T1w	3.4	eye-spillover	87.846	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl027_acq-undistorted_T1w	3.6		76.032	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl029_acq-undistorted_T1w	3.55	eye-spillover	60.22	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-008_acq-undistorted_T1w	3.8	eye-spillover, noise-local	192.932	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-010_acq-undistorted_T1w	3.8	eye-spillover	91.177	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-011_acq-undistorted_T1w	2.65	head-motion, eye-spillover	135.574	3.55	HM ringing visiblle in lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-013_acq-undistorted_T1w	3.1	head-motion, eye-spillover, uncategorized	118.564	3.4	ripples in right lower frontal lobe 
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-015_acq-undistorted_T1w	3.4	head-motion, eye-spillover	93.335	3.55	sublte HM-related ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-016_acq-undistorted_T1w	3.55	eye-spillover, noise-local	156.086	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-017_acq-undistorted_T1w	2.85	head-motion, eye-spillover	111.544	3.5	relatively large but subtle ripples
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-019_acq-undistorted_T1w	3.6	eye-spillover, noise-local	83.609	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-020_acq-undistorted_T1w	3.75	eye-spillover	139.887	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-021_acq-undistorted_T1w	2.35	head-motion, eye-spillover	164.914	3.45	HM ripples viisible on T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-022_acq-undistorted_T1w	2.95	head-motion, eye-spillover	73.164	3.5	HM ripples on lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-023_acq-undistorted_T1w	3.85	eye-spillover	80.98	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-024_acq-undistorted_T1w	3.45	eye-spillover, noise-global	117.355	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-025_acq-undistorted_T1w	3.45	eye-spillover, noneye-spillover, noise-global	116.326	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-025_acq-undistorted_T1w	3.15	eye-spillover, noneye-spillover	11.184	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-026_acq-undistorted_T1w	2.45	head-motion, eye-spillover, noise-global	110.158	3.2	HM ringing visible in T1w in lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-028_acq-undistorted_T1w	2.35	eye-spillover	158.825	3.45	HM ringing visible in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-037_acq-undistorted_T1w	2.45	head-motion, eye-spillover	130.869	3.45	HM ringing visible in T1w 
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-039_acq-undistorted_T1w	3.25	eye-spillover	84.002	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-040_acq-undistorted_T1w	2.45	head-motion, eye-spillover	134.768	3.3	HM ringing visible in T1w in lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-041_acq-undistorted_T1w	3.35	eye-spillover, noise-global	118.078	3.55	strong ESP but perpendicular to the brain so it's no problem
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-042_acq-undistorted_T1w	2.45	head-motion, eye-spillover	72.921	3.55	HM ringing visible in T1w lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-043_acq-undistorted_T1w	2.2	head-motion, eye-spillover	65.893	3.65	HM ringing visible in T1w
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-044_acq-undistorted_T1w	2.7	eye-spillover	98.602	3.5	subtle HM ringing visible in T1w lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-045_acq-undistorted_T1w	2.45	head-motion, eye-spillover	133.657	3.05	HM ringing visible in T1w lower frontal lobe
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-046_acq-undistorted_T1w	3.05	head-motion, eye-spillover	125.347	3.45	subtle HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_acq-undistorted_run-1_T1w	1.65	eye-spillover, uncategorized	88.32	3.8	low contrast
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_acq-undistorted_run-2_T1w	1.6	eye-spillover, inu, uncategorized	58.408	3.65	low contrast
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_acq-undistorted_run-3_T1w	1.65	eye-spillover, inu, uncategorized	53.255	3.7	low contrast
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	2.55	ghost-aliasing	92.11	3.35	low resolution
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot002_acq-morphobox_T1w	2.4	eye-spillover, ghost-aliasing	71.424	3.5	
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-undistorted_T1w	1.55	eye-spillover, ghost-aliasing, uncategorized	114.721	2.8	ESP overlap with GM in T1w, lowe contrast
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-original_T1w	1.6	eye-spillover, ghost-aliasing	60.998	3.5	ESP overlaps with GM
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot010_acq-undistorted_T1w	1.65	eye-spillover, ghost-aliasing	68.988	3.2	ESP overlaps with GM
