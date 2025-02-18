@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="NiReports: https://www.nipreps.org/" />
-<title>sub-001_ses-003_task-rest_dir-LR_bold :: MRIQC's BOLD fMRI report</title>
+<title>sub-001_ses-003_task-rsmovie_dir-LR_bold :: MRIQC's BOLD fMRI report</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@ var timestamp = Date.now()
 
 function read_form() {
     var ds = "HCPh";
-    var sub = "sub-001_ses-003_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz";
+    var sub = "sub-001_ses-003_task-rsmovie_dir-LR_echo-1_part-mag_bold.nii.gz";
 
     var artifacts = [];
     $('#qcartifacts-group input:checked').each(function() {
@@ -110,10 +110,10 @@ $(window).on('load',function(){
             Basic echo-wise reports
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">1</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">2</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">3</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">4</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">1</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">2</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">3</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-stdev_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">4</span>.</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
@@ -121,10 +121,10 @@ $(window).on('load',function(){
             Extended echo-wise reports
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">1</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">2</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">3</span>.</a></li>
-                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest">Reports for: echo <span class="bids-entity">4</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">1</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">2</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">3</span>.</a></li>
+                <li><a class="dropdown-item" href="#datatype-figures_desc-mean_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie">Reports for: echo <span class="bids-entity">4</span>.</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
@@ -152,147 +152,147 @@ $(window).on('load',function(){
 
     <div id="Basic echo-wise reports" class="mt-5">
     <h1 class="sub-report-title pt-5 ps-4">Basic echo-wise reports</h1>
-        <div id="datatype-figures_desc-stdev_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-stdev_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">1</span>.</h2><h3 class="run-title mt-3">Standard deviation of signal through time</h3><p class="elem-caption">The voxel-wise standard deviation of the signal (variability along time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-stdev_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-stdev_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-stdev_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-stdev_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-background_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-background_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">View of the background of the voxel-wise average of the BOLD timeseries</h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-background_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-background_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-background_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-background_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-zoomed_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-zoomed_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Voxel-wise average of BOLD time-series, zoomed-in covering just the brain</h3><p class="elem-caption">This panel shows a mosaic of the brain. This mosaic is the most suitable to screen head-motion intensity inhomogeneities, global/local noise, signal leakage (for example, from the eyeballs and across the phase-encoding axis), etc.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-zoomed_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-zoomed_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-zoomed_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-zoomed_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-carpet_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-carpet_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Carpetplot and nuisance signals</h3><p class="elem-caption">The so-called &laquo;carpetplot&raquo; may assist in assessing head-motion derived artifacts and respiation effects.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-carpet_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-carpet_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-carpet_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-carpet_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-stdev_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-stdev_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">2</span>.</h2><h3 class="run-title mt-3">Standard deviation of signal through time</h3><p class="elem-caption">The voxel-wise standard deviation of the signal (variability along time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-stdev_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-stdev_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-stdev_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-stdev_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-background_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-background_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">View of the background of the voxel-wise average of the BOLD timeseries</h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-background_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-background_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-background_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-background_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-zoomed_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-zoomed_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Voxel-wise average of BOLD time-series, zoomed-in covering just the brain</h3><p class="elem-caption">This panel shows a mosaic of the brain. This mosaic is the most suitable to screen head-motion intensity inhomogeneities, global/local noise, signal leakage (for example, from the eyeballs and across the phase-encoding axis), etc.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-zoomed_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-zoomed_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-zoomed_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-zoomed_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-carpet_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-carpet_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Carpetplot and nuisance signals</h3><p class="elem-caption">The so-called &laquo;carpetplot&raquo; may assist in assessing head-motion derived artifacts and respiation effects.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-carpet_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-carpet_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-carpet_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-carpet_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-stdev_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-stdev_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">3</span>.</h2><h3 class="run-title mt-3">Standard deviation of signal through time</h3><p class="elem-caption">The voxel-wise standard deviation of the signal (variability along time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-stdev_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-stdev_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-stdev_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-stdev_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-background_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-background_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">View of the background of the voxel-wise average of the BOLD timeseries</h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-background_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-background_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-background_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-background_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-zoomed_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-zoomed_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Voxel-wise average of BOLD time-series, zoomed-in covering just the brain</h3><p class="elem-caption">This panel shows a mosaic of the brain. This mosaic is the most suitable to screen head-motion intensity inhomogeneities, global/local noise, signal leakage (for example, from the eyeballs and across the phase-encoding axis), etc.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-zoomed_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-zoomed_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-zoomed_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-zoomed_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-carpet_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-carpet_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Carpetplot and nuisance signals</h3><p class="elem-caption">The so-called &laquo;carpetplot&raquo; may assist in assessing head-motion derived artifacts and respiation effects.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-carpet_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-carpet_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-carpet_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-carpet_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-stdev_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-stdev_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">4</span>.</h2><h3 class="run-title mt-3">Standard deviation of signal through time</h3><p class="elem-caption">The voxel-wise standard deviation of the signal (variability along time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-stdev_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-stdev_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-stdev_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-stdev_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-stdev_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-background_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-background_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">View of the background of the voxel-wise average of the BOLD timeseries</h3><p class="elem-caption">This panel shows a mosaic enhancing the background around the head. Artifacts usually unveil themselves in the air surrounding the head, where no signal sources are present.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-background_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-background_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-background_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-background_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-background_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-zoomed_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-zoomed_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Voxel-wise average of BOLD time-series, zoomed-in covering just the brain</h3><p class="elem-caption">This panel shows a mosaic of the brain. This mosaic is the most suitable to screen head-motion intensity inhomogeneities, global/local noise, signal leakage (for example, from the eyeballs and across the phase-encoding axis), etc.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-zoomed_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-zoomed_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-zoomed_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-zoomed_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-zoomed_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-carpet_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-carpet_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h3 class="run-title mt-3">Carpetplot and nuisance signals</h3><p class="elem-caption">The so-called &laquo;carpetplot&raquo; may assist in assessing head-motion derived artifacts and respiation effects.</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-carpet_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-carpet_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-carpet_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-carpet_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-carpet_bold.svg</a></small>
 
         </div>
     </div>
     <div id="Extended echo-wise reports" class="mt-5">
     <h1 class="sub-report-title pt-5 ps-4">Extended echo-wise reports</h1>
-        <div id="datatype-figures_desc-mean_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-mean_direction-LR_echo-1_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">1</span>.</h2><h3 class="run-title mt-3">Voxel-wise average of BOLD time-series</h3><p class="elem-caption">The average signal calculated across the last axis (time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-mean_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-mean_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-1_desc-mean_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_desc-mean_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-mean_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-mean_direction-LR_echo-2_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">2</span>.</h2><h3 class="run-title mt-3">Voxel-wise average of BOLD time-series</h3><p class="elem-caption">The average signal calculated across the last axis (time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-mean_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-mean_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-2_desc-mean_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-2_desc-mean_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-mean_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-mean_direction-LR_echo-3_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">3</span>.</h2><h3 class="run-title mt-3">Voxel-wise average of BOLD time-series</h3><p class="elem-caption">The average signal calculated across the last axis (time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-mean_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-mean_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-3_desc-mean_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-3_desc-mean_bold.svg</a></small>
 
         </div>
-        <div id="datatype-figures_desc-mean_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rest" class="ps-4 pe-4 mb-2">
+        <div id="datatype-figures_desc-mean_direction-LR_echo-4_session-003_subject-001_suffix-bold_task-rsmovie" class="ps-4 pe-4 mb-2">
 <h2 class="sub-report-group mt-4">Reports for: echo <span class="bids-entity">4</span>.</h2><h3 class="run-title mt-3">Voxel-wise average of BOLD time-series</h3><p class="elem-caption">The average signal calculated across the last axis (time).</p>                    <div class="reportlet">
-<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-mean_bold.svg" style="width: 100%" />
+<img class="svg-reportlet" src="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-mean_bold.svg" style="width: 100%" />
 </div>
-<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rest_dir-LR_echo-4_desc-mean_bold.svg</a></small>
+<small>Get figure file: <a href="./sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-mean_bold.svg" target="_blank">sub-001/figures/sub-001_ses-003_task-rsmovie_dir-LR_echo-4_desc-mean_bold.svg</a></small>
 
         </div>
     </div>
@@ -317,7 +317,7 @@ reconstructing the provenance of the corresponding derivatives.
       <div class="accordion-body metadata-table">
       <table id="about-metadata-table-0" class="table table-sm table-striped">
 <tr><td colspan=2>Execution environment</td><td>posix</td></tr>
-<tr><td colspan=2>Input filename</td><td><BIDS root>/sub-001/ses-003/func/sub-001_ses-003_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz</td></tr>
+<tr><td colspan=2>Input filename</td><td><BIDS root>/sub-001/ses-003/func/sub-001_ses-003_task-rsmovie_dir-LR_echo-1_part-mag_bold.nii.gz</td></tr>
 <tr><td>Versions</td><td>MRIQC</td><td>24.1.0.dev15+g9586c867.d20240825</td></tr>
 <tr><td>Versions</td><td>NiPype</td><td>1.8.6</td></tr>
 <tr><td>Versions</td><td>TemplateFlow</td><td>24.2.0</td></tr>
@@ -390,7 +390,7 @@ reconstructing the provenance of the corresponding derivatives.
 <tr><td>PhaseResolution</td><td>1</td></tr>
 <tr><td>PixelBandwidth</td><td>1961</td></tr>
 <tr><td>ProcedureStepDescription</td><td>https://www.axonlab.org/hcph-sops/</td></tr>
-<tr><td>ProtocolName</td><td>func-bold_task-rest_dir-LR__cmrr_me4_sms4</td></tr>
+<tr><td>ProtocolName</td><td>func-bold_task-rsmovie_dir-LR__cmrr_me4_sms4</td></tr>
 <tr><td>PulseSequenceDetails</td><td>%CustomerSeq%\cmrr_mbep2d_bold</td></tr>
 <tr><td>PulseSequenceName</td><td>epfid2d4_76</td></tr>
 <tr><td>ReceiveCoilActiveElements</td><td>HC1-7;NC1</td></tr>
@@ -401,7 +401,7 @@ reconstructing the provenance of the corresponding derivatives.
 <tr><td>ScanOptions</td><td>PFP\FS</td></tr>
 <tr><td>ScanningSequence</td><td>EP</td></tr>
 <tr><td>SequenceVariant</td><td>SK\SS\OSP</td></tr>
-<tr><td>SeriesDescription</td><td>func-bold_task-rest_dir-LR__cmrr_me4_sms4</td></tr>
+<tr><td>SeriesDescription</td><td>func-bold_task-rsmovie_dir-LR__cmrr_me4_sms4</td></tr>
 <tr><td>SeriesNumber</td><td>21</td></tr>
 <tr><td>ShimSetting</td><td>[8238, -5609, -6017, 683, -42, -245, -31, 6]</td></tr>
 <tr><td>SliceThickness</td><td>2.2</td></tr>

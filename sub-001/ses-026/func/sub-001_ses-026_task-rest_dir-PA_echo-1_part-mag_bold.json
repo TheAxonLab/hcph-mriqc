@@ -89,7 +89,7 @@
     "PhaseResolution": 1,
     "PixelBandwidth": 2264,
     "ProcedureStepDescription": "https://www.axonlab.org/hcph-sops/",
-    "ProtocolName": "func-bold_task-rest_dir-PA__cmrr_me4_sms4",
+    "ProtocolName": "func-bold_task-rsmovie_dir-PA__cmrr_me4_sms4",
     "PulseSequenceDetails": "%CustomerSeq%\\cmrr_mbep2d_bold",
     "PulseSequenceName": "epfid2d4_96",
     "ReceiveCoilActiveElements": "HC1-7",
@@ -100,7 +100,7 @@
     "ScanOptions": "PFP\\FS",
     "ScanningSequence": "EP",
     "SequenceVariant": "SK\\SS",
-    "SeriesDescription": "func-bold_task-rest_dir-PA__cmrr_me4_sms4",
+    "SeriesDescription": "func-bold_task-rsmovie_dir-PA__cmrr_me4_sms4",
     "SeriesNumber": 23,
     "ShimSetting": [
       8220,
