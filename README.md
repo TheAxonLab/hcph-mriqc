@@ -1,6 +1,7 @@
 # HCPh Derivatives: MRIQC
 
 MRIQC derivatives of the HCPh Study.
+This repository also contains the manual quality ratings assigned to the reliability subset of the data.
 
 How to download this dataset (requires DataLad):
 

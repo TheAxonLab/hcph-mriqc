@@ -1,0 +1,20 @@
+{
+    "abbreviations":
+        {
+            "bg": "background",
+            "ESP": "eye-spillover",
+            "FOV": "field of view",
+            "GM": "grey matter",
+            "HM": "head-motion",
+            "INU": "intensity non-uniformity"
+        },
+    "general_qc_comments":
+        [
+            "The majority of pilot sessions are corrupted by eye-spillover that overlaps cortical matter.",
+            "In the pilot sessions, aliasing ghosts are always visible in background but not visible on the cortical matter which is good.",
+            "Several pilot sessions present weird stripes at the inter-hemispheral commissure in occipital lobe.",
+            "It seems pilot sessions have lower contrast than normal sessions.",
+            "All normal sessions present an eye-spillover but perpendicular to the brain so it nicely does not overlap with cortical matter.",
+            "Some normal sessions present head-motion related ringing, especially in lower frontal lobe."
+        ]
+}
