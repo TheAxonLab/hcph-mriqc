@@ -11,7 +11,8 @@
         "SD": "susceptibility distortion",
         "SNR": "signal-to-noise ratio",
         "std": "standard deviation",
-        "WS": "multi-band-related square visible in sagittal plane of standard deviation mosaic."
+        "WS": "multi-band-related square visible in sagittal plane of standard deviation mosaic.",
+	"WL": "multi-band-related horizontal lines visible in sagittal plane of average BOLD."
         },
     "general_qc_comments":
         [
@@ -28,6 +29,7 @@
             "Echo 1 is more prone to the multi-band-related square in the sagittal plane of the standard deviation mosaic.",
             "For the breath holding task, the FD timeserie reflects breathing blocks and light/dark alternation are visible in the carpetplot.",
             "It was difficult to discern head-motion related ringing from the noise present on all images (especially in echo 1).",
-            "All scans present susceptibility distortion and aliasing ghost."
+            "All scans present susceptibility distortion and aliasing ghost.",
+            "The artifact WL was visible only in the generalizability sessions and more pronounced for the scanner prisma and vida than vidafit."
         ]
 }
