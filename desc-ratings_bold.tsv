@@ -6,7 +6,7 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_task-qct_dir-AP_bold	2.75	gh
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_task-qct_dir-AP_bold	3.1	ghost-aliasing, inu, uncategorized	179.286	2.2	weird square (WS), SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_task-qct_dir-AP_bold	3.1	ghost-aliasing, inu, uncategorized	28.252	2.25	weird square, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_task-qct_dir-AP_bold	2.45	ghost-aliasing	225.422	1.7	WS, SD, aliasing ghost visible in avg BOLD in echo 1
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_task-qct_dir-LR_bold	2.0	head-motion, ghost-aliasing	245.009	2.9	SD, deflection in carpet plot because of one motion spike, aliasing ghost visible in bg in echo2-4
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_task-qct_dir-LR_bold	2	head-motion, ghost-aliasing	245.009	2.9	SD, deflection in carpet plot because of one motion spike, aliasing ghost visible in bg in echo2-4
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_task-qct_dir-RL_bold	2.2	ghost-aliasing, uncategorized	288.834	2.7	WS, SD, aliasing ghost visible in bg fo echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_task-qct_dir-RL_bold	2.45	ghost-aliasing, uncategorized	208.874	2.8	WS, SD, aliasing ghost visible in bg of avg BOLD in echo 1-2
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot020_task-qct_dir-RL_bold	2.3	ghost-aliasing, uncategorized	168.956	2.2	WS, SD, aliasing ghost visible in bg of avg BOLD in echo1-3
@@ -27,11 +27,11 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-017_task-qct_dir-PA_bold	3.1	ghost-al
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-019_task-qct_dir-PA_bold	2.55	wrap-around, ghost-aliasing, uncategorized	333.491	3.35	WS, SD, wrap-around of the eyes induce spurious high std in skull close to occipital lobe
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-020_task-qct_dir-RL_bold	2.8	ghost-aliasing, uncategorized	250.534	3.7	WS, almost vertical strike in sagittal std echo 3-4, aliasing ghost visible in bg of avg BOLD echo 1-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-021_task-qct_dir-RL_bold	2.85	ghost-aliasing, uncategorized	323.835	2.9	WS, SD, aliasing ghost is visible in bg of avg BOLD echo 1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-022_task-qct_dir-AP_bold	3.25	ghost-aliasing, uncategorized	162.719	3.0	WS very light, SD
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-022_task-qct_dir-AP_bold	3.25	ghost-aliasing, uncategorized	162.719	3	WS very light, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-023_task-qct_dir-AP_bold	3.2	ghost-aliasing, uncategorized	179.997	3.1	WS light, SD
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-024_task-qct_dir-AP_bold	3.05	noise-global, ghost-aliasing, uncategorized	171.685	3.0	WS, SD
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-024_task-qct_dir-AP_bold	3.05	noise-global, ghost-aliasing, uncategorized	171.685	3	WS, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-025_task-qct_dir-RL_bold	2.85	ghost-aliasing, uncategorized	185.4	3.15	WS, SD, vertical strike in sagittal std, aliasing ghost visible in bg of avg BOLD echo1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-026_task-qct_dir-PA_bold	2.95	wrap-around, ghost-aliasing, uncategorized	189.459	3.0	wrap-around of the eyes inducing spurious high std close to occipital lobe, SD
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-026_task-qct_dir-PA_bold	2.95	wrap-around, ghost-aliasing, uncategorized	189.459	3	wrap-around of the eyes inducing spurious high std close to occipital lobe, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-028_task-qct_dir-RL_bold	2.55	ghost-aliasing, uncategorized	163.589	3.3	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-4
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-037_task-qct_dir-LR_bold	2.95	ghost-aliasing, uncategorized	169.317	3.15	WS, SD, aliasing ghost faintly visible in bg of avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-039_task-qct_dir-LR_bold	2.95	ghost-aliasing, uncategorized	173.248	3.25	WS, SD, aliasing ghost faintly visible in bg of avg BOLD echo 1
@@ -43,28 +43,28 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-044_task-qct_dir-LR_bold	3.1	eye-spil
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-045_task-qct_dir-LR_bold	3.2	ghost-aliasing, uncategorized	141.14	2.9	WS, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-046_task-qct_dir-LR_bold	3.25	ghost-aliasing	130.398	3.35	WS, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_task-qct_dir-RL_bold	2.8	ghost-aliasing, uncategorized	156.455	3.5	WS, SD, aliasing ghost visible in bg of avg BOLD of echo 1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot008_task-bht_dir-AP_bold	3.1	head-motion, ghost-aliasing	614.405	3.0	WS very light, SD, interesting: FD trace seems to follow breathing blocks, corresponding light and dark block in carpetplot are visible, I think HM related ringing is visible on avg BOLD
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot009_task-bht_dir-AP_bold	3.0	head-motion, ghost-aliasing, uncategorized	233.456	2.35	WS light, SD, HM ringing
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_task-bht_dir-AP_bold	3.0	ghost-aliasing, uncategorized	173.964	2.3	WS light, SD
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot008_task-bht_dir-AP_bold	3.1	head-motion, ghost-aliasing	614.405	3	WS very light, SD, interesting: FD trace seems to follow breathing blocks, corresponding light and dark block in carpetplot are visible, I think HM related ringing is visible on avg BOLD
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot009_task-bht_dir-AP_bold	3	head-motion, ghost-aliasing, uncategorized	233.456	2.35	WS light, SD, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_task-bht_dir-AP_bold	3	ghost-aliasing, uncategorized	173.964	2.3	WS light, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_task-bht_dir-AP_bold	2.35	wrap-around, ghost-aliasing, uncategorized	561.093	3.6	WS very light, aliasing ghost of the eyes inside the brain visible on std echo 2, warp around causing spurious high std in occipital lobe. That wrap around is visible in avg BOLD echo 1, interesting: ventricles visible in std maps of echo 4
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_task-bht_dir-AP_bold	2.9	head-motion, ghost-aliasing, uncategorized	240.573	3.5	WS light, SD more severe than usual it feels, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_task-bht_dir-LR_bold	2.7	ghost-aliasing, uncategorized	244.67	3.15	WS, dark deflection in center of carpet plot and usual light and dark block alternance not visible, SD, aliasing ghost faintly visible in bg of echo 1 avg BOLD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_task-bht_dir-AP_run-1_bold	3.15	head-motion, ghost-aliasing, uncategorized	230.36	3.1	WS light, FD peak but no consequence on carpetplot, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_task-bht_dir-AP_run-2_bold	2.95	head-motion, ghost-aliasing, uncategorized	244.486	2.95	WS llight, HM ringing (especially visible coupled with SD drop out), SD, small wrap-around
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_task-bht_dir-LR_bold	2.75	head-motion, ghost-aliasing, uncategorized	219.958	3.0	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_task-bht_dir-LR_bold	2.75	head-motion, ghost-aliasing, uncategorized	219.958	3	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_task-bht_dir-RL_bold	2.7	ghost-aliasing, inu, uncategorized	184.258	3.05	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_task-bht_dir-RL_bold	2.75	head-motion, ghost-aliasing, uncategorized	206.581	3.15	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-2, HM ringing on avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot020_task-bht_dir-RL_bold	2.5	head-motion, ghost-aliasing, uncategorized	504.471	3.25	WS, SD, dark deflection before motion peak in FD, aliasing ghost visible in bg of avg BOLD of echo 1-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot021_task-bht_dir-RL_bold	2.7	ghost-aliasing, uncategorized	305.358	3.1	WS, SD - skull really not round , aliasing ghost visible in bg of avg BOLD echo 1-4
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-001_task-bht_dir-LR_bold	3.0	head-motion, ghost-aliasing, uncategorized	232.523	3.1	WS, SD, HM ringing, aliasing faintly visible in bg of avg BOLD echo 1
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-003_task-bht_dir-LR_bold	2.95	head-motion, ghost-aliasing, inu, uncategorized	297.845	3.0	WS, SD, aliasing faintly visible in bg of avg BOLD echo 1, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-001_task-bht_dir-LR_bold	3	head-motion, ghost-aliasing, uncategorized	232.523	3.1	WS, SD, HM ringing, aliasing faintly visible in bg of avg BOLD echo 1
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-003_task-bht_dir-LR_bold	2.95	head-motion, ghost-aliasing, inu, uncategorized	297.845	3	WS, SD, aliasing faintly visible in bg of avg BOLD echo 1, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-004_task-bht_dir-RL_bold	2.75	ghost-aliasing, uncategorized	290.687	3.25	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-005_task-bht_dir-PA_bold	2.35	head-motion, wrap-around, ghost-aliasing, uncategorized	291.655	3.15	wrap-around of the eyes inducing spurious high std in occipital lobe, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-006_task-bht_dir-PA_bold	3.05	head-motion, wrap-around, ghost-aliasing, uncategorized	296.961	3.1	wrap-around eyes that induces spurious high std in occipital lobe, SD, WS light, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-007_task-bht_dir-LR_bold	2.9	head-motion, uncategorized	228.81	2.95	WS, SD, HM ringing, aliasing ghost faintly visible in bg of avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-008_task-bht_dir-RL_bold	2.75	ghost-aliasing, uncategorized	222.404	2.95	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-010_task-bht_dir-RL_bold	2.75	ghost-aliasing, uncategorized	250.514	2.55	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-011_task-bht_dir-AP_bold	3.0	head-motion, ghost-aliasing	230.376	2.65	SD, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-011_task-bht_dir-AP_bold	3	head-motion, ghost-aliasing	230.376	2.65	SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-013_task-bht_dir-PA_bold	2.4	wrap-around, ghost-aliasing, uncategorized	280.463	2.8	WS light, wrap-around of the eyes that induces spurious high std in occipital lobe, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-015_task-bht_dir-AP_bold	3.1	head-motion, ghost-aliasing, uncategorized	257.093	2.85	SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-016_task-bht_dir-RL_bold	2.7	ghost-aliasing, uncategorized	242.759	3.4	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
@@ -72,16 +72,16 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-017_task-bht_dir-PA_bold	2.2	head-mot
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-019_task-bht_dir-PA_bold	2.25	head-motion, wrap-around, ghost-aliasing, uncategorized	326.29	3.3	wrap-around eyes that induce spurious high std in occipital lobe, WS light, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-020_task-bht_dir-RL_bold	2.7	ghost-aliasing, uncategorized	330.909	3.3	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-4
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-021_task-bht_dir-RL_bold	2.75	ghost-aliasing, uncategorized	383.461	3.3	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-022_task-bht_dir-AP_bold	3.1	head-motion, ghost-aliasing, uncategorized	235.781	3.0	SD, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-022_task-bht_dir-AP_bold	3.1	head-motion, ghost-aliasing, uncategorized	235.781	3	SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-023_task-bht_dir-AP_bold	1.95	head-motion, ghost-aliasing, uncategorized	468.975	3.1	aliasing ghost visible in cortical GM of echo 1!, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-024_task-bht_dir-AP_bold	1.95	head-motion, ghost-aliasing, uncategorized	394.471	2.2	WS light, SD, HM ringing, aliasing ghost visible in cortical GM in echo 1!
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-025_task-bht_dir-RL_bold	2.65	noise-global, ghost-aliasing, inu, uncategorized	295.251	3.25	SD, WS, aliasing ghost visible in bg of avg BOLD echo 1-3
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-026_task-bht_dir-PA_bold	2.25	head-motion, wrap-around, uncategorized	218.41	3.0	wrap-around eyes induces spurious high std in occipital lobe, SD, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-026_task-bht_dir-PA_bold	2.25	head-motion, wrap-around, uncategorized	218.41	3	wrap-around eyes induces spurious high std in occipital lobe, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-028_task-bht_dir-RL_bold	2.7	ghost-aliasing, uncategorized	192.226	2.9	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl029_task-bht_dir-PA_bold	3.1	head-motion, ghost-aliasing, uncategorized	230.801	3.45	WS light, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-037_task-bht_dir-LR_bold	2.85	ghost-aliasing, uncategorized	287.993	3.3	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-2
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-039_task-bht_dir-LR_bold	2.95	head-motion, uncategorized	218.608	3.3	WS, SD, aliasing ghost faintly visible in bg of avg BOLD echo 1, HM ringing
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-040_task-bht_dir-AP_bold	3.0	head-motion, ghost-aliasing, uncategorized	408.61	3.2	SD, WS light, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-040_task-bht_dir-AP_bold	3	head-motion, ghost-aliasing, uncategorized	408.61	3.2	SD, WS light, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-041_task-bht_dir-AP_bold	2.25	head-motion, ghost-aliasing, inu, uncategorized	333.419	2.35	WS, aliasing ghost faintly visible in GM on echo 1!, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-042_task-bht_dir-PA_bold	2.2	head-motion, wrap-around, ghost-aliasing, uncategorized	203.844	3.3	wrap around eyes that induces high std close to occipital lobe, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-043_task-bht_dir-AP_bold	1.75	head-motion, ghost-aliasing, uncategorized	322.238	3.2	aliasing ghost visible in GM on echo 1!, SD, HM ringing
@@ -90,8 +90,8 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-045_task-bht_dir-LR_bold	2.85	head-mo
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-046_task-bht_dir-LR_bold	3.15	ghost-aliasing, uncategorized	229.644	3.35	WS, SD, aliasing ghost faintly visible in avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_task-bht_dir-RL_bold	2.85	head-motion, ghost-aliasing, uncategorized	207.282	3.2	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1-4, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot004_task-rest_bold	1.45	head-motion, ghost-aliasing, inu, uncategorized	377.341	1.8	WS, HM ringing, aliasing ghost visible on GM in echo 1, dark deflection throughout the majority of the carpetplot, SD
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot005_task-rest_acq-fa80_bold	3.0	head-motion, ghost-aliasing, uncategorized	346.896	2.95	WS light, SD, HM ringing (but FD is tiny)
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_task-rest_dir-AP_bold	1.6	head-motion, ghost-aliasing, uncategorized	208.859	3.0	WS light, aliasing ghost visible in GM on echo 1, SD, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot005_task-rest_acq-fa80_bold	3	head-motion, ghost-aliasing, uncategorized	346.896	2.95	WS light, SD, HM ringing (but FD is tiny)
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_task-rest_dir-AP_bold	1.6	head-motion, ghost-aliasing, uncategorized	208.859	3	WS light, aliasing ghost visible in GM on echo 1, SD, HM ringing
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_task-rest_dir-AP_bold	1.6	head-motion, ghost-aliasing, uncategorized	193.873	2.65	WS light, aliasing ghost visible in GM on echo1 , FD peak with some deflections visible in carpet plot, SD
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_task-rest_dir-LR_bold	2.9	ghost-aliasing, uncategorized	217.927	3.4	WS, SD, aliasing ghost visible in bg of avg BOLD echo 1
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_task-rest_dir-RL_bold	2.4	head-motion, ghost-aliasing, uncategorized	274.05	2.9	WS, SD, FD peak but no effect on carpetplot, HM ringing, first half of carpetplot deflections, aliasing ghost visible in bg of avg BOLD echo 1-4
@@ -128,4 +128,44 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-043_task-rest_dir-AP_bold	1.65	head-m
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-044_task-rest_dir-LR_bold	2.45	head-motion, noise-global, ghost-aliasing, uncategorized	231.681	3.2	SD, WS, HM ringing, FD peak followed by dark delfection in carpetplot, aliasing ghost lighly visible in bg of avg BOLD echo 2-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-045_task-rest_dir-LR_bold	2.95	head-motion, ghost-aliasing, uncategorized	191.336	3.35	SD, WS, HM ringing, aliasing ghost lightly visible in bg of avg BOLD echo 2-3
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-046_task-rest_dir-LR_bold	2.9	head-motion, noise-global, ghost-aliasing, uncategorized	223.896	2.9	WS, SD, aliasing ghost faintly visible in bg of avg BOLD echo 1-3, HM ringing
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_task-rest_dir-RL_bold	2.0	head-motion, noise-global, ghost-aliasing, uncategorized	221.25	3.1	WS, SD, delfections in carpetplot , aliasing ghost visible in bg of avg BOLD echo 1-4, HM ringing
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-047_task-rest_dir-RL_bold	2	head-motion, noise-global, ghost-aliasing, uncategorized	221.25	3.1	WS, SD, delfections in carpetplot , aliasing ghost visible in bg of avg BOLD echo 1-4, HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20202030_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.85	head-motion, ghost-aliasing	171.745	3.1	weird square in sagittal plane std (WS), deflections in carpetplot
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20903034_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	3.1	head-motion, ghost-aliasing	116.935	3.15	HM pic leaving deflections in edge
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20103060_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	1.7	head-motion, ghost-aliasing	267.982	1.6	high std in occipital, head tilted, horizontal lines in saggital plane of average, periodic motion. Not sure if it should be even excluded because of this weird line
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20401030_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.4	ghost-aliasing	420.592	1.1	weird horizontal lines in saggital plane average
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20302034_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.6	wrap-around, ghost-aliasing	159.622	2.65	wrap around but non overlapping GM, weird lines are discrete but there
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21002034_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.75	head-motion, ghost-aliasing	175.414	2.65	HM pic with deflections, faint aliasing ghost visible in background of avg
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20801030_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	191.739	1.5	WS, weird lines strong (WL), non overlapping aliasing ghost visible in the bg of avg
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20301060_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	164.245	3.5	WS, WL, faint aliasing ghost visible in bg avg
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20701034_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	3.2	ghost-aliasing	122.074	3.05	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20702060_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	250.243	1.75	hight std in lower prefrontal cortex (above the eyes), WL, non overlapping wraparound
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21202034_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.6	ghost-aliasing	202.515	1.2	WS, WL softly present
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20501034_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.95	ghost-aliasing	207.951	2.05	high std in occipital, discrete WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20702030_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.4	ghost-aliasing, uncategorized	183.348	1.25	WL strong
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20802060_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	196.172	1.6	WS, WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20501030_task-rest_dir-PA_echo-1_bold.nii.gz	2.3	head-motion, wrap-around	260.638	1.1	WL, HM pic causing slight deflections in crown
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20203034_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.7	head-motion, ghost-aliasing	259.524	2.45	high std in left occipital, WS, WL are slightly there, period of high frequency motiion causing deflections
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20601060_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.35	ghost-aliasing	256.48	1.6	high std in occipital, WL, non overlapping wrap around
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20402060_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	163.61	1.6	non overlapping wrap around, WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21001030_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.05	ghost-aliasing	187.193	0.75	non overlapping wrap around, high std in occipital, WL, periodic deflections in GM
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20303030_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing	205.863	1.6	non overlapping wraparound, strong WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20101060_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	1.8	wrap-around, ghost-aliasing	227.118	2.85	non overlapping wrap around, high std in occipital, WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20102034_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	3	ghost-aliasing	224.05	2.35	WS  light, WL really light
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21101034_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	3.2	ghost-aliasing	140.936	2.3	non-overlapping wrap-around, WL very light
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2	wrap-around, ghost-aliasing	300.376	1.4	WS, strong WL, wrap around is very close to prefrontal cortex
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20103034_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.6	head-motion, ghost-aliasing	633.118	2.25	high std in occipital and back skull, light WS, HM spike causing deflections everywhere but in the crown, non overlapping wrap around
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21202060_task-rest_dir-AP_echo-1_part-mag_bold.nii.gz	2.4	ghost-aliasing	123.52	1.8	WS, strong WL, non-overlapping wrap-around
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20802034_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.85	head-motion, ghost-aliasing	1658.97	2.9	WS, WL light, HM peak
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21101060_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.1	head-motion, ghost-aliasing	124.36	1.55	WS, strong WL, high mean FD compare to the other sessions, HM peaks
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20902060_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.35	ghost-aliasing	93.111	1.75	non-overlapping wrap around, strong WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21201030_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.25	head-motion, ghost-aliasing	133.26	1.55	WS, strong WL, HM peaks
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20401034_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.85	head-motion, ghost-aliasing	189.486	2.45	WS, WL light, high motion peak linked with deflections
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20902030_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.4	head-motion, ghost-aliasing	110.025	1.9	WS, strong WL, high motion peak but no deflections associated
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20601034_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.45	ghost-aliasing	132.676	1.95	WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20101030_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	2.35	ghost-aliasing	96.147	1.8	strong WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20102030_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	1.6	head-motion, wrap-around, ghost-aliasing	231.937	0.45	WL strong, wrap-around, HM peak with deflections
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21102030_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.35	ghost-aliasing	103.034	1.5	WS, WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20602030_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.35	ghost-aliasing	139.165	1.5	WS, strong WL
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20001060_task-rest_dir-PA_echo-1_part-mag_bold.nii.gz	1.4	ghost-aliasing	140.876	3.95	non-overlapping wrap around, resting-state cut short in time (only 2min), too short to be useful except for method development
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20502060_task-rest_dir-RL_echo-1_part-mag_bold.nii.gz	2.1	head-motion, ghost-aliasing	115.964	1.55	WS, strong WL, HM peaks with deflections
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21001060_task-rest_dir-LR_echo-1_part-mag_bold.nii.gz	2.3	ghost-aliasing, uncategorized	91.205	1.6	WS, strong WL

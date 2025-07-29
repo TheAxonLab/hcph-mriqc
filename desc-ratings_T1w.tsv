@@ -1,8 +1,8 @@
 rater_id	dataset	input_file	rating	artifacts	time_sec	confidence	comments
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl027_acq-undistorted_T1w	3.55	eye-spillover, noise-local	209.948	2.5	local noise close to the ventricles
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-excl029_acq-undistorted_T1w	3.45	eye-spillover, inu	113.066	3.5	light INU
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.2	ghost-aliasing	84.348	4.0	low resolution
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.85	eye-spillover, ghost-aliasing	42.385	4.0	low resolution
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.2	ghost-aliasing	84.348	4	low resolution
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot001_acq-morphobox_T1w	1.85	eye-spillover, ghost-aliasing	42.385	4	low resolution
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot002_acq-morphobox_T1w	1.75	head-motion, ghost-aliasing	90.988	3.5	ghost and head motion visible in the background but not in T1w
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot003_acq-morphobox_T1w	1.75	eye-spillover, noneye-spillover, ghost-aliasing	96.921	3.5	artifacts detected visible only in the bg
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot004_acq-morphobox_T1w	1.9	eye-spillover, ghost-aliasing	72.793	3.25	
@@ -18,24 +18,24 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_acq-original_T1w	1.4	eye-spi
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot011_acq-undistorted_T1w	1.55	eye-spillover, noneye-spillover	168.172	0.4	slice 82-83 heat motion ringing visible, occipital ESP-like visible
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_acq-undistorted_T1w	1.9	eye-spillover, ghost-aliasing	103.997	3.5	
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot012_acq-original_T1w	1.45	eye-spillover, noneye-spillover, ghost-aliasing, uncategorized	172.492	1.4	ESP overlaps GM in T1w, ESP-like in occipital lobe visible
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-undistorted_T1w	2.0	eye-spillover, noise-local, ghost-aliasing	171.071	2.7	noisy close to the ventricles
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-original_T1w	2.0	eye-spillover, ghost-aliasing	162.818	2.4	ESP overlaps GM 
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-undistorted_T1w	2	eye-spillover, noise-local, ghost-aliasing	171.071	2.7	noisy close to the ventricles
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot013_acq-original_T1w	2	eye-spillover, ghost-aliasing	162.818	2.4	ESP overlaps GM 
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_acq-original_T1w	1.7	head-motion, eye-spillover, ghost-aliasing	293.94	3.5	bad artfact in the bg, ESP overlaps GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot014_acq-undistorted_T1w	2.1	head-motion, eye-spillover	204.442	3.5	bad artifact in bg, ESP overlaps with GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_acq-original_T1w	2.6	eye-spillover	149.213	3.2	ESP on slice 94 (only left) on not on other T1w slice
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot015_acq-undistorted_T1w	2.65	eye-spillover, ghost-aliasing	83.156	3.25	ESP only left slice 94, rest not so much
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_acq-undistorted_T1w	1.6	head-motion, eye-spillover, ghost-aliasing, uncategorized	180.636	3.8	artifact in the bg, head motion ripples visible on T1w, ESP overlaps GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot016_acq-original_T1w	1.55	eye-spillover, uncategorized	89.93	3.5	artifact in bg, HM ripple visible in GM, ES overlaps GM
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-1_T1w	1.0		92.458	4.0	looks like two images are overlapped
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-1_T1w	1.0		24.517	4.0	looks like two images were merged into one
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-2_T1w	1.0		31.326	4.0	looks like two images were merged into one
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-2_T1w	1.0		11.97	4.0	looks like two images were merged into one
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-3_T1w	1.0		30.188	4.0	looks like two images were merged into one
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-3_T1w	1.0		20.077	4.0	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-1_T1w	1		92.458	4	looks like two images are overlapped
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-1_T1w	1		24.517	4	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-2_T1w	1		31.326	4	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-2_T1w	1		11.97	4	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-3_T1w	1		30.188	4	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-3_T1w	1		20.077	4	looks like two images were merged into one
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-original_run-4_T1w	2.65	wrap-around	264.05	3.2	narrow FOV, wrap-around nose visible but does not overlap with GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot017_acq-undistorted_run-4_T1w	2.7	wrap-around	91.314	3.5	narrow FOV, nose wrap-around visible but does not overlap with GM, no ESP visible for once
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-1_T1w	1.0		36.681	4.0	looks like two images were merged into one
-celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-2_T1w	1.0		20.556	4.0	Looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-1_T1w	1		36.681	4	looks like two images were merged into one
+celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot018_acq-tra_run-2_T1w	1		20.556	4	Looks like two images were merged into one
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_acq-original_T1w	2.05	eye-spillover, ghost-aliasing	119.72	3.5	ESP overlaps GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot019_acq-undistorted_T1w	1.75	eye-spillover, ghost-aliasing	90.413	3.6	artifact in bg, ESP overlaps GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot020_acq-original_T1w	2.6	eye-spillover, ghost-aliasing	81.176	3.5	ESP overlaps GM a bit
@@ -83,3 +83,54 @@ celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot002_acq-morphobox_T1w	2.4	eye-sp
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-undistorted_T1w	1.55	eye-spillover, ghost-aliasing, uncategorized	114.721	2.8	ESP overlap with GM in T1w, lowe contrast
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot006_acq-original_T1w	1.6	eye-spillover, ghost-aliasing	60.998	3.5	ESP overlaps with GM
 celine	mriqc-23.2.0-withoutdwi	sub-001_ses-pilot010_acq-undistorted_T1w	1.65	eye-spillover, ghost-aliasing	68.988	3.2	ESP overlaps with GM
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.7	head-motion	444.753	3.4	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.75	head-motion	16.804	3.4	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.7	head-motion	13.487	3.4	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.7	head-motion	16.838	3.35	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.75	head-motion	17.231	3.45	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.75	head-motion	15.318	3.1	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20201060_acq-undistorted_T1w.nii.gz	2.75	head-motion	13.83	3.3	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20602030_acq-undistorted_T1w.nii.gz	3.6		95.936	3.8	a small patch of HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20601060_acq-undistorted_T1w.nii.gz	2.85	head-motion	390.667	2.9	granular appearance, low SNR
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20903034_acq-undistorted_run-1_T1w.nii.gz	2.6	head-motion	66.337	3.5	clear HM ringing, contrast a bit low
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20903034_acq-undistorted_run-2_T1w.nii.gz	3.45	head-motion	78.935	3.45	HM ringing visible
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20103060_acq-undistorted_T1w.nii.gz	2.35	inu	135.221	3.35	weird noise structure, low contrast, moderate INU
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20002030_acq-undistorted_run-2_T1w.nii.gz	3.65		82.021	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20702060_acq-undistorted_T1w.nii.gz	3.6	head-motion	80.088	3.3	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20902030_acq-undistorted_T1w.nii.gz	3.35	inu	68.714	3.35	mild INU
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21202034_acq-undistorted_T1w.nii.gz	3.3	head-motion	197.631	2.75	HM ringing, mild INU
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20601034_acq-undistorted_run-2_T1w.nii.gz	3.45		68.36	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20902060_acq-undistorted_T1w.nii.gz	3.65		249.866	3.35	A small piece of HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20702030_acq-undistorted_T1w.nii.gz	3.4	head-motion	72.039	3.5	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20502060_acq-undistorted_T1w.nii.gz	3.55	head-motion	88.13	3.4	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20302034_acq-undistorted_T1w.nii.gz	3.4	head-motion	87.737	3.35	HM ringing, slightly low SNR
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21102030_acq-undistorted_T1w.nii.gz	2.8	head-motion, noise-global	105.021	3.35	artifact in bg, slightly low SNR, HM ringing, granulous
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21201030_acq-undistorted_T1w.nii.gz	2.7	head-motion, noise-global, ghost-aliasing	91.612	3.25	HM ringing visible in background (bg), slight aliasing ghost in bg
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20203034_acq-undistorted_T1w.nii.gz	2.35	head-motion	88.413	3.35	clear HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20101030_acq-undistorted_T1w.nii.gz	2.9	head-motion, ghost-aliasing	99.59	3.3	slight aliasing ghost, HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20103034_acq-undistorted_T1w.nii.gz	2.8	head-motion, ghost-aliasing	149.057	3.4	slight aliasing ghost, HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20003034_acq-undistorted_T1w.nii.gz	2.2	head-motion, eye-spillover, ghost-aliasing	103.643	3.4	clear HM ringing, strong EP
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21101034_acq-undistorted_T1w.nii.gz	3.4	head-motion	239.944	3.2	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20402060_acq-undistorted_T1w.nii.gz	2.65	head-motion, noise-global	74.055	3.15	HM ringing visible in bg, granulous
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20301060_acq-undistorted_T1w.nii.gz	3	noise-global	91.932	3.05	granulous
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20801030_acq-undistorted_T1w.nii.gz	3.15	ghost-aliasing	124.151	3.15	looks smoother/blurrier than usual
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20102030_acq-undistorted_T1w.nii.gz	3.25	head-motion, noise-global	263.444	2.55	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20102034_acq-undistorted_T1w.nii.gz	3.1	head-motion, ghost-aliasing	63.673	3.45	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20802034_acq-undistorted_T1w.nii.gz	3.45		157.806	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20303030_acq-undistorted_T1w.nii.gz	3.05	head-motion	105.969	3.35	artifact in bg, HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20601034_acq-undistorted_run-1_T1w.nii.gz	2.8	head-motion, ghost-aliasing	87.617	3.5	clear HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20101060_acq-undistorted_T1w.nii.gz	2.65	head-motion, noise-global	98.964	3.35	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21001060_acq-undistorted_T1w.nii.gz	3.05	noise-global	92.799	3.35	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21002034_acq-undistorted_T1w.nii.gz	3.35	ghost-aliasing	144.311	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20501030_acq-undistorted_T1w.nii.gz	3	head-motion, noise-local	81.573	2.95	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20202030_acq-undistorted_T1w.nii.gz	3	head-motion, noise-local	104.479	3.25	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21001030_acq-undistorted_T1w.nii.gz	3.35	ghost-aliasing	62.605	3.45	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20501034_acq-undistorted_T1w.nii.gz	3.3	ghost-aliasing	56.53	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20802060_acq-undistorted_T1w.nii.gz	3.65		98.456	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20001060_acq-undistorted_T1w.nii.gz	3.45		98.298	2.85	tight FOV
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20401030_acq-undistorted_T1w.nii.gz	2.75	head-motion, ghost-aliasing	120.941	3.1	ripples unknown origin, maybe HM 
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-pilot20002030_acq-undistorted_run-1_T1w.nii.gz	3.45	ghost-aliasing	106.612	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21101060_acq-undistorted_T1w.nii.gz	2.85	head-motion, noise-global	97.539	3.25	HM ringing
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-21202060_acq-undistorted_T1w.nii.gz	3.05	head-motion, noise-global	171.549	2.8	HM ringing, head quite tilted
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20401034_acq-undistorted_T1w.nii.gz	3.3		103.021	3.5	
+celine	MRIQC - HCPh: Human Connectome PHantom	sub-001_ses-20701034_acq-undistorted_T1w.nii.gz	3.45	ghost-aliasing	85.074	3.5	
